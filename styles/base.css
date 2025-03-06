@@ -203,11 +203,6 @@ footer p {
     }
 }
 
-.highlight {
-    color: yellow;
-    font-size: smaller;
-}
-
 main {
     max-width: 3000px;
     margin: 0 auto;
@@ -230,60 +225,8 @@ section {
     border-radius: 0.5rem;
 }
 
-.filters {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.filters button {
-    flex: 1;
-    max-width: 200px;
-    padding: 5px;
-    margin: 0 5px;
-    border: 1px solid black;
-    background-color: black;
-    color: white;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.filters button:hover {
-    background-color: #d3d3d3;
-}
 
 
-#courses {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-#courses button {
-    border: 1px solid #666;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
-    font-size: 1rem;
-    color: white;
-    transition: background-color 0.3s;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.brown-bg {
-    background-color: brown;
-}
 
 
 h2 {
@@ -346,18 +289,6 @@ img {
 
 }
 
-/* Footer styles */
-footer {
-    background-color: rgb(29, 77, 114);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-footer p {
-    margin: 0;
-    text-align: center;
-}
 
 /* Responsive layout */
 @media (max-width: 768px) {
@@ -387,7 +318,6 @@ main {
 
 .course-details {
     grid-column: 2;
-    /* Place the course details section in the second column */
 }
 
 h1 {
@@ -400,5 +330,103 @@ h1 {
     box-shadow: 0 0 10px black;
     margin-top: 0;
     padding-top: 0;
+}
+
+
+
+.card {
+    grid-column: span 3;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px black;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: .5rem .5rem 0 0;
+    background-color: rgb(29, 77, 114);
+}
+
+.card .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.card .filters button {
+    flex: 1;
+    max-width: 100px;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card .filters button:hover {
+    background-color: #d3d3d3;
+}
+
+.card #courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card #courses button {
+    border: 1px solid #666;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.card #courses .brown-bg {
+    background-color: #8B4513;
+}
+
+footer {
+    background-color: rgb(29, 77, 114);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .albania {
+    width: 60px;
+    height: auto;
+    border: none;
+    margin-left: 10px;
 }
 
