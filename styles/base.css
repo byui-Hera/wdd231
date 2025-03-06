@@ -178,9 +178,7 @@
         width: 90px;
         height: auto;
         border: 1px solid rgba(0, 0, 0, 0.3);
-        margin-right: auto;
         display: flex;
-
     }
 
     /* Footer styles */
@@ -250,16 +248,6 @@
         justify-content: center;
         align-items: center;
     }
-
-    .albania {
-        width: 90px;
-        height: auto;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        margin: right;
-        display: flex;
-
-    }
-
 
     /* Responsive layout */
     @media (max-width: 768px) {
