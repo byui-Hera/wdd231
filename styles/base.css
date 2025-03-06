@@ -1,0 +1,404 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(29, 77, 114);
+    border: 1px solid rgb(0 0 0 / 0.1);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.header span {
+    background-color: rgb(29, 77, 114);
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+nav a,
+nav a:visited {
+    flex: 1 1 100%;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+    font-weight: 600;
+    background-color: #555;
+}
+
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        border: 1px solid rgb(0 0 0 / 0.1);
+        box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+        color: white;
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav ul li {
+        flex: 1 1 auto;
+    }
+}
+
+
+section {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+    background-color: white;
+    color: rgb(29, 77, 114);
+    border-radius: 0.5rem;
+}
+
+.filters button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filters button:hover {
+    background-color: rgb(29, 77, 114);
+}
+
+.filters button.active {
+    background-color: rgb(29, 77, 114);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: .5rem .5rem 0 0;
+    background-color: rgb(29, 77, 114);
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(29, 77, 114);
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: .5rem .5rem 0 0;
+    background-color: white;
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.profile {
+    width: 120px;
+    height: auto;
+    margin-right: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: .5rem;
+}
+
+
+.tirana {
+    width: 200px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albania {
+    width: 90px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: right;
+    display: flex;
+
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(29, 77, 114);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.highlight {
+    color: yellow;
+    font-size: smaller;
+}
+
+main {
+    max-width: 3000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    color: rgb(29, 77, 114);
+}
+
+section {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+    background-color: white;
+    color: rgb(29, 77, 114);
+    border-radius: 0.5rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters button {
+    flex: 1;
+    max-width: 200px;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filters button:hover {
+    background-color: #d3d3d3;
+}
+
+
+#courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#courses button {
+    border: 1px solid #666;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.brown-bg {
+    background-color: brown;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: .5rem .5rem 0 0;
+    background-color: rgb(29, 77, 114);
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(29, 77, 114);
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: .5rem .5rem 0 0;
+    background-color: white;
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.profile {
+    width: 120px;
+    height: auto;
+    margin-right: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: .5rem;
+}
+
+
+.tirana {
+    width: 200px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albania {
+    width: 90px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: right;
+    display: flex;
+
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(29, 77, 114);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.highlight {
+    color: yellow;
+    font-size: smaller;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    /* Make the first column wider */
+    gap: 1rem;
+}
+
+.course {
+    grid-column: 1;
+    /* Place the course section in the first column */
+    margin: 1rem;
+}
+
+.course-details {
+    grid-column: 2;
+    /* Place the course details section in the second column */
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.course,
+.country,
+.card {
+    box-shadow: 0 0 10px black;
+    margin-top: 0;
+    padding-top: 0;
+}
+

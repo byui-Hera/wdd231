@@ -1,20 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content = "Hera Hysi">
-    <meta name = "description" content = "WDD 231 Dynamic Web Fundamentals by Hera Hysi. Demonstrate your knowledge of HTML, CSS, and JavaScript.">
-    <title>WDD 231 Dynamic Web Fundamentals - Hera Hysi</title>
+    <meta name="author" content="Hera Hysi">
+    <meta name="description"
+        content="WDD 231 Dynamic Web Fundamentals by Hera Hysi. Demonstrate your knowledge of HTML, CSS, and JavaScript.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/getcourses.js" defer></script>
+    <title>Hera Hysi | WDD 231 Course Home</title>
 </head>
 <body>
     <header>
-
+        <img class="profile" src="images/profile.jpg" alt="My profile" width="200" height="136">
+        <h1>Hera Hysi</h1>
     </header>
-    
+    <nav>
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.github.com/byui-Hera">Github Profile</a></li>
+            <li><a href="https://linkedin.com">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class = "course">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class = "country">
+            <h2>Tirana, Albania</h2>
+            <img class="tirana" src="images/tirana.jpg" alt="Tirana, Albania" width="200" height="136">
+            <h4>Skenderbeg statue</h4>
+        </section>
+        <section class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="CSE">CSE</button>
+                <button id="WDD">WDD</button>
+            </div>
+            <hr>
+            <div id="courses">
+                <button id="#" class="brown-bg">CSE 110</button>
+                <button id="#" class="brown-bg">WDD 130</button>
+                <button id="#" class="brown-bg">WDD 131</button>
+                <button id="#" style="color: black;">CSE 111</button>
+                <button id="#" style="color: black;">CSE 210</button>
+                <button id="#" style="color: black;">WDD 231</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span id="copyright"></span><span>&copy; 2025 ◈ Hera Hysi ◈ Albania</span>
+        </p>
+        <span class="vcenter">
+            <img class="albania" src="images/albania.jpg" alt="Albania's flag" width="30" loading="lazy"></span>
+        <p id="lastModified" class="highlight">Last Update: 05/20/2024 17:55:24</p>
+    </footer>
 </body>
+
 </html>
