@@ -90,3 +90,9 @@ courses.forEach(course => {
     coursesElement.appendChild(div);
 
 });
+
+
+
+
+
+
