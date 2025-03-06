@@ -78,21 +78,34 @@ const courses = [
     }
 ]
 
-const coursesElement = document.query('#courses');
+document.addEventListener('DOMContentLoaded', () => {
+    const courseContainer = document.getElementById('courses');
+    const totalCreditsElement = document.getElementById('totalCredits');
 
-courses.forEach(course => {
+    function displayCourses(filter) {
+        courseContainer.innerHTML = '';
+        const filteredCourses = filter ? courses.filter(course => course.subject === filter) : courses;
+        filteredCourses.forEach(course => {
+            const button = document.createElement('button');
+            button.textContent = `${course.completed ? '✔' : ''} ${course.subject} ${course.number}`;
+            button.className = course.completed ? 'brown-bg' : '';
+            button.style.color = course.completed ? '' : 'black';
+            courseContainer.appendChild(button);
+        });
+        const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+        totalCreditsElement.textContent = totalCredits;
+    }
 
-    const div = document.createElement('div');
-    div.classList.add('course');
-    const h3 = document.createElement('h3');
-    h3.innerHTML = `<em>${course.subject}</em> ${course.number}`;
-    div.appendChild(h3);
-    coursesElement.appendChild(div);
-
+    document.getElementById('all').addEventListener('click', () => displayCourses());
+    document.getElementById('CSE').addEventListener('click', () => displayCourses('CSE'));
+    document.getElementById('WDD').addEventListener('click', () => displayCourses('WDD'));
+    
+    displayCourses();
 });
 
 
 
 
+   
 
 
