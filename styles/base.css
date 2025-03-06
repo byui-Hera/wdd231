@@ -314,7 +314,6 @@ h1 {
 
 .card {
     grid-column: span 3;
-    color: white;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px black;
     margin: 1rem;
