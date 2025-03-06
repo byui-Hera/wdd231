@@ -137,7 +137,7 @@ h2 {
 }
 
 h4 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgb(29, 77, 114);
     text-align: center;
@@ -226,35 +226,6 @@ section {
 }
 
 
-
-
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin: 1rem 0;
-    padding: 0.5rem;
-    border-radius: .5rem .5rem 0 0;
-    background-color: rgb(29, 77, 114);
-    margin: 0 0 0.5rem;
-    font-size: 1.1rem;
-}
-
-h4 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: rgb(29, 77, 114);
-    text-align: center;
-    margin: 1rem 0;
-    padding: 0.5rem;
-    border-radius: .5rem .5rem 0 0;
-    background-color: white;
-    margin: 0 0 0.5rem;
-    font-size: 1.1rem;
-}
-
 .profile {
     width: 120px;
     height: auto;
@@ -316,6 +287,13 @@ main {
     margin: 1rem;
 }
 
+.course h2 {
+    font-size: 1.5rem;
+}
+
+.country h2 {
+    font-size: 1.5rem;
+}
 .course-details {
     grid-column: 2;
 }
@@ -339,6 +317,7 @@ h1 {
     color: white;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px black;
+    margin: 1rem;
 }
 
 .card h2 {
@@ -350,6 +329,7 @@ h1 {
     padding: 0.5rem;
     border-radius: .5rem .5rem 0 0;
     background-color: rgb(29, 77, 114);
+    margin: 0 0 0.5rem;
 }
 
 .card .filters {
@@ -424,21 +404,8 @@ footer p {
 }
 
 footer .albania {
-    width: 60px;
+    width: 70px;
     height: auto;
     border: none;
     margin-left: 10px;
-}
-
-.course-card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
-    background-color: white;
-}
-
-.course-card.completed {
-    background-color: #d4edda;
-    border-color: #c3e6cb;
 }
