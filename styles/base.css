@@ -239,16 +239,6 @@
     }
 
 
-    .tirana {
-        width: 200px;
-        height: auto;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     /* Responsive layout */
     @media (max-width: 768px) {
         main {
