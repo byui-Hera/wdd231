@@ -354,3 +354,47 @@ figure img {
 figure img:hover {
     transform: scaleX(-1)
 }
+
+
+/* ...existing code... */
+
+.navbar {
+    position: relative;
+}
+
+.menu-links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-links li {
+    padding: 10px;
+}
+
+#hamburger-btn {
+    cursor: pointer;
+    font-size: 40px;
+    display: block;
+    color: rgb(226, 226, 28);
+}
+
+#close-menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+@media (min-width: 600px) {
+    .menu-links {
+        display: flex;
+    }
+
+    #hamburger-btn {
+        display: none;
+    }
+}
+
+/* ...existing code... */
+

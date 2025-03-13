@@ -61,3 +61,25 @@ const cardsMembers = (members) => {
 };
 
 getMemberData(url);
+
+// ...existing code...
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const menuLinks = document.querySelector('.menu-links');
+
+    hamburgerBtn.addEventListener('click', function () {
+        menuLinks.style.display = 'block';
+        closeMenuBtn.style.display = 'block';
+        hamburgerBtn.style.display = 'none';
+    });
+
+    closeMenuBtn.addEventListener('click', function () {
+        menuLinks.style.display = 'none';
+        closeMenuBtn.style.display = 'none';
+        hamburgerBtn.style.display = 'block';
+    });
+});
+
+// ...existing code...
