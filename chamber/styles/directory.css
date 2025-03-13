@@ -383,7 +383,8 @@ figure img:hover {
 #close-menu-btn {
     display: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 30px;
+    color: rgb(226, 226, 28);
 }
 
 @media (min-width: 600px) {
@@ -398,24 +399,5 @@ figure img:hover {
 
 /* ...existing code... */
 
-/* ...existing code... */
 
-/* Prevent horizontal scrolling */
-body {
-    overflow-x: hidden;
-}
 
-/* Ensure the image scales properly */
-#hero img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-
-/* Adjust the hero section to prevent overflow */
-#hero {
-    position: relative;
-    overflow: hidden;
-}
-
-/* ...existing code... */
