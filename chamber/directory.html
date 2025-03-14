@@ -1,125 +1,121 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>The Collective Chamber of Commerce: Directory Page</title>
-        <meta name="description" content="Chamber Directory Page by Hera Hysi" />
-        <meta name="author" content="Hera Hysi" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Collective Chammber of Commerce: Directory Page</title>
+    <meta name="description" content="Chamber Directory Page by Hera Hysi" />
+    <meta name="author" content="Hera Hysi" />
 
-        <!--  Facebook META Tags -->
-        <meta property="og:title" content="Chamber Directory Page" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://github.com/byui-Hera/wdd231/blob/main/chamber/images/hero.webp" />
-        <meta property="og:url" content="https://byui-Hera.github.io/wdd231/chamber/directory.html" />
-        <!-- *** Call to Action *** -->
-        <meta name="twitter:card" content="summary_large_image" />
+    <!--  Facebook META Tags -->
+    <meta property="og:title" content="Chamber Directory Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://github.com/byui-Hera/wdd231/blob/main/chamber/images/hero.webp" />
+    <meta property="og:url" content="https://byui-Hera.github.io/wdd231/chamber/directory.html" />
 
-        <!--  Non-Essential, But Recommended -->
-        <meta property="og:description" content="The Collective Chamber of Commerce Directory Page by Hera Hysi" />
-        <meta property="og:site_name" content="byui-Hera" />
-        <meta name="twitter:image:alt" content="Arial view of victoria falls attractions" />
+    <!-- *** Call to Action *** -->
+    <meta name="twitter:card" content="summary_large_image" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="styles/directory.css" />
-        <script src="scripts/directory.js" defer></script>
-        <link rel="icon" href="images/favicon.ico" />
-    </head>
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="The Collective Chammber of Commerce Directory Page by Hera Hysi" />
+    <meta property="og:site_name" content="PurpleCre" />
+    <meta name="twitter:image:alt" content="Arial view of victoria falls attractions" />
 
-    <body>
-        <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/directory.css" />
+    <script src="scripts/directory.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="images/her.jpg" alt="images/vicfalls.webp" />
+            <div>
+                <h1>The Great Chance</h1>
+                <p>Chamber of Commerce</p>
+                <a href="#" id="menu"></a>
+            </div>
+        </section>
+        <nav>
+            <a href="index.html">Home</a><a href="directory.html" class="active">Directory</a><a
+                href="join.html">Join</a><a href="discover.html">Discover</a>
+            <!-- <a href="#">🌓</a> -->
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero.webp" />
+                <!-- <source media="(min-width: )" srcset=""> -->
+                <img src="images/nhero.webp" alt="Hero image" />
+            </picture>
+        </section>
+        <h2>Home</h2>
+        <section id="info">
             <section>
-                <img src="images/her.jpg" alt="images/vicfalls.webp" />
-                <div>
-                    <h1>The Collective</h1>
-                    <p>Chamber of Commerce</p>
-                    <a href="#" id="menu"></a>
+                <h3>Events</h3>
+                <div id="events">
+                    <ul>
+                        <li>More to come</li>
+                    </ul>
                 </div>
             </section>
-            <nav class="navbar">
-                <ul class="menu-links">
-                <li id="close-menu-btn" class="material-symbols-outlined">x</li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <!-- <a href="#">🌓</a> -->
-                </ul>
-                <span id="hamburger-btn" class="material-symbols-outlined">☰</span>
-            </nav>
-        </header>
-        <main>
-            <section id="hero">
-                <picture>
-                    <source media="(max-width: 500px)" srcset="images/hero.webp" />
-                    <!-- <source media="(min-width: )" srcset=""> -->
-                    <img src="images/nhero.webp" alt="Hero image" />
-                </picture>
-            </section>
-            <h2>Home</h2>
-            <section id="info">
-                <section>
-                    <h3>Events</h3>
-                    <div id="events">
-                        <ul>
-                            <li>More to come</li>
-                        </ul>
+            <section>
+                <h3>Current Weather</h3>
+                <div id="weather">
+                    <p id="emo">⛅</p>
+                    <div id="stuff">
+                        <p>75⁰F</p>
+                        <p>Partly Cloudy</p>
+                        <p>High: 85⁰</p>
+                        <p>Low: 52⁰</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
                     </div>
-                </section>
-                <section>
-                    <h3>Current Weather</h3>
-                    <div id="weather">
-                        <p id="emo">⛅</p>
-                        <div id="stuff">
-                            <p>75⁰F</p>
-                            <p>Partly Cloudy</p>
-                            <p>High: 85⁰</p>
-                            <p>Low: 52⁰</p>
-                            <p>Humidity: 34%</p>
-                            <p>Sunrise: 7:30am</p>
-                            <p>Sunset: 9:59pm</p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3>Weather Forecast</h3>
-                    <p>Today: <strong>90⁰F</strong></p>
-                    <p>Wednesday: <strong>89⁰</strong></p>
-                    <p>Thursday: <strong>68⁰</strong></p>
-                </section>
+                </div>
             </section>
-            <div class="menu">
-                <h2>Businesses</h2>
-                <button id="grid">⏹️Grid</button>
-                <button id="list">📄List</button>
-            </div>
-            <section id="buss" class="grid"></section>
-        </main>
-        <footer class="footer">
-            <section id="address">
-                <p><strong>Great Chance</strong></p>
-                <p>10 Rue</p>
-                <p>Tafara, mail 56</p>
-                <p>info@Collectivecc.org</p>
-                <p>(222)434-5432</p>
+            <section>
+                <h3>Weather Forecast</h3>
+                <p>Today: <strong>90⁰F</strong></p>
+                <p>Wednesday: <strong>89⁰</strong></p>
+                <p>Thursday: <strong>68⁰</strong></p>
             </section>
-            <section id="social">
-                <a href="https://www.facebook.com/"><img src="images/facebook.png"
-                        alt="facebook Icon by Rakib Hassan Rahim" /></a>
-                <a href="https://www.linkedin.com/in/"><img src="images/linkedin.png"
-                        alt="linkedin Icon by Rakib Hassan Rahim" /></a>
-                <a href="https://x.com/?lang=en"><img src="images/twitter.png" alt="twitter Icon by Freepik" /></a>
-            </section>
-            <section id="miei">
-                <p>WDD231 Class Project</p>
-                <p>Hera Hysi</p>
-                <p>&copy;<span id="year"></span> The Great Chance</p>
-                <p id="lastmodified"></p>
-            </section>
-        </footer>
-    </body>
+        </section>
+        <div class="menu">
+            <h2>Businesses</h2>
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <section id="buss" class="grid"></section>
+    </main>
+    <footer>
+        <section id="address">
+            <p><strong>The Collective Chamber of Commerce</strong></p>
+            <p>10 Rue</p>
+            <p>Tafara, mail 56</p>
+            <p>info@Collectivecc.org</p>
+            <p>(222)434-5432</p>
+        </section>
+        <section id="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png"
+                    alt="facebook Icon" /></a>
+            <a href="https://www.linkedin.com/in/"><img src="images/linkedin.png"
+                    alt="linkedin Icon" /></a>
+            <a href="https://x.com/?lang=en"><img src="images/twitter.png" alt="twitter Icon" /></a>
+        </section>
+        <section id="miei">
+            <p>WDD231 Class Project</p>
+            <p>Hera Hysi</p>
+            <p>&copy;<span id="year"></span> The Gerat Chance</p>
+            <p id="lastmodified"></p>
+        </section>
+    </footer>
+</body>
 
-    </html>
+</html>

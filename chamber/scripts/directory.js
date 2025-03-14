@@ -63,20 +63,3 @@ const cardsMembers = (members) => {
 getMemberData(url);
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerBtn = document.getElementById('hamburger-btn');
-    const closeMenuBtn = document.getElementById('close-menu-btn');
-    const menuLinks = document.querySelector('.menu-links');
-
-    hamburgerBtn.addEventListener('click', function () {
-        menuLinks.style.display = 'flex';
-        hamburgerBtn.style.display = 'none';
-        closeMenuBtn.style.display = 'block';
-    });
-
-    closeMenuBtn.addEventListener('click', function () {
-        menuLinks.style.display = 'none';
-        hamburgerBtn.style.display = 'block';
-        closeMenuBtn.style.display = 'none';
-    });
-});
