@@ -401,3 +401,7 @@ figure img:hover {
 
 
 
+html,
+body {
+    overflow-x: hidden;
+}
