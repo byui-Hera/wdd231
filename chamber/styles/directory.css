@@ -321,6 +321,7 @@ footer p {
 #social {
     display: flex;
     align-self: baseline;
+    gap: 20px;
 }
 
 #social img {
@@ -437,5 +438,54 @@ body {
     #social img {
         width: 50px;
         /* Adjust the size as needed */
+    }
+}
+
+.navbar {
+    position: relative;
+}
+
+.menu-links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+.menu-links li {
+    padding: 10px;
+}
+
+#hamburger-btn {
+    cursor: pointer;
+    font-size: 40px;
+    display: block;
+    color: rgb(226, 226, 28);
+}
+
+#close-menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(226, 226, 28);
+}
+
+@media (min-width: 600px) {
+    .menu-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #hamburger-btn {
+        display: none;
+    }
+
+    #close-menu-btn {
+        display: none;
     }
 }
