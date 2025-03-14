@@ -24,8 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -39,14 +38,13 @@
                 </div>
             </div>
             <div class="anchor-div">
-                <nav>
-                    <a href="">Home</a>
-                    <a href="">Directory</a>
-                    <a href="">Join</a>
-                    <a href="">Discover</a>
+                <nav id="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="directory.html" class="active">Directory</a>
+                    <a href="join.html">Join</a>
+                    <a href="discover.html">Discover</a>
                 </nav>
-                <button class="cir-icon"><i class="fa-solid fa-circle-half-stroke"></i></button>
-                <button class="menu"><i class="fa-solid fa-list"></i></button>
+                <button class="menu" id="menuButton"><i class="fa-solid fa-list"></i></button>
             </div>
         </div>
     </header>
@@ -54,6 +52,7 @@
         <img src="images/nhero.webp" alt="hero">
     </section>
     <main>
+        <h1>Home</h1>
         <div class="event-container">
             <div class="events">
                 <h4>Events</h4>
@@ -79,6 +78,11 @@
                 <p>Wednesday: 89F</p>
                 <p>Thursday: 68F</p>
             </div>
+        </div>
+        <div class="menu">
+            <h2>Businesses</h2>
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
         </div>
         <div id="memberDirectory" class="grid">
         </div>

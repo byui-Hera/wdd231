@@ -63,10 +63,14 @@ nav a:hover {
     height: 5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+    /* Center the content horizontally */
 }
 
 .logo img {
     width: 4rem;
+    margin-right: 10px;
+    /* Add margin to create a gap */
 }
 
 .logo div p {
@@ -187,11 +191,10 @@ section img {
     justify-content: space-around;
 }
 
+/* Remove gray circle around social media logos */
 .second .img {
-    background-color: grey;
-    height: 80px;
-    width: 80px;
-    border-radius: 50px;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,8 +204,8 @@ section img {
 .second .img img,
 .img img {
     height: 40px;
-    width: 50px;
-    border-radius: 25px;
+    width: 40px;
+    border-radius: 0;
 }
 
 /* Member Directory */
@@ -252,4 +255,59 @@ section img {
     color: #00274d;
     border: none;
     cursor: pointer;
+}
+
+/* Hamburger Menu */
+.menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#navMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navMenu.open {
+    display: flex;
+}
+
+#navMenu a {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+    #navMenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+/* View Toggle Buttons */
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.view-toggle button.active {
+    background-color: #00274d;
+    color: white;
 }

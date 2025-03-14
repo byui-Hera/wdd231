@@ -1,72 +1,65 @@
 [
     {
-        "name": "Ok",
-        "address": "11501, Donnybrook Dr, Harare",
-        "mail": "online@okzim.co.zw",
-        "number": " +263 4 757311-9",
-        "url": "https://okonline.co.zw/",
-        "image": "./images/ok.webp",
-        "level": "Gold",
-        "motto": "More smiles everyday"
+        "name": "Tech Solutions Inc.",
+        "address": "123 Tech Street, Silicon Valley, CA",
+        "phone": "123-456-7890",
+        "website": "https://www.techsolutions.com",
+        "image": "tech.avif",
+        "membershipLevel": 3,
+        "description": "A leading provider of innovative tech solutions for businesses worldwide."
     },
     {
-        "name": "Choppies",
-        "address": "557W+5F4, Harare",
-        "mail": "info@choppies.co.zw",
-        "number": "+263 9 470240/+263 9 471083",
-        "url": "https://choppies.co.zw/",
-        "image": "./images/choppies.webp",
-        "level": "Gold",
-        "motto": "Giving customers the best total value for their money."
+        "name": "Green Earth Co.",
+        "address": "456 Greenway Blvd, Portland, OR",
+        "phone": "987-654-3210",
+        "website": "https://www.greenearth.com",
+        "image": "green-earth.jpg",
+        "membershipLevel": 2,
+        "description": "Specializing in sustainable products and eco-friendly practices."
     },
     {
-        "name": "First One",
-        "address": "541W+5F4, Harare",
-        "number": "+26376432879",
-        "mail": "info@cfirstone.co.zw",
-        "url": "https://firstone.co.zw/",
-        "image": "./images/first.webp",
-        "level": "Silver",
-        "motto": "Your needs First"
+        "name": "Fast Financial Group",
+        "address": "789 Finance Rd, New York, NY",
+        "phone": "555-123-4567",
+        "website": "https://www.fastfinancial.com",
+        "image": "finance.jpg",
+        "membershipLevel": 1,
+        "description": "Expert financial advisors helping clients achieve their financial goals."
     },
     {
-        "name": "VinciTech",
-        "address": "102 Pamron Building, Ground floor, Cnr Jason Moyo & 4th Street, Harare, Zimbabwe",
-        "mail": "info@vincitechrnd.co.zw",
-        "number": "+263784 947 992 | +263 771 360 917",
-        "url": "https://vincitechrnd.co.zw/",
-        "image": "./images/vinci.webp",
-        "level": "Silver",
-        "motto": "Together we will invent the future."
+        "name": "Health & Wellness Center",
+        "address": "321 Healthy Ave, Austin, TX",
+        "phone": "456-789-0123",
+        "website": "https://www.healthwellness.com",
+        "image": "health.jpg",
+        "membershipLevel": 3,
+        "description": "Promoting physical and mental well-being through expert services."
     },
     {
-        "name": "Old Mutual",
-        "address": "100 The Chase, Mutual Gardens, Emerald Hill, Harare",
-        "mail": " omsec@oldmutual.co.zw ",
-        "number": "+263 242 308 400",
-        "url": "https://www.oldmutual.co.zw/contact-us/",
-        "image": "./images/oldm.webp",
-        "level": "Gold",
-        "motto": "We're in the business of helping people and companies do great things with their money. Let's do the same for you"
+        "name": "NextGen Gaming",
+        "address": "159 Gamer's Alley, Los Angeles, CA",
+        "phone": "321-654-9870",
+        "website": "https://www.nextgengaming.com",
+        "image": "nextgame.avif",
+        "membershipLevel": 2,
+        "description": "Creating immersive gaming experiences for the next generation."
     },
     {
-        "name": "BancABC",
-        "address": "1 Endeavour Crescent, Mt Pleasant Business Park, Mt Pleasant, Harare",
-        "mail": "contactcentrezw@bancabc.co.zw",
-        "number": "08677 008 666",
-        "url": "https://www.bancabc.co.zw/",
-        "image": "./images/bancabc.webp",
-        "level": "Bronze",
-        "motto": "To become a top 5 financial services provider who is a partner of choice for customers, employees and other stakeholders by 2023."
+        "name": "Bright Future Education",
+        "address": "789 Learning Lane, Chicago, IL",
+        "phone": "123-789-4560",
+        "website": "https://www.brightfutureedu.com",
+        "image": "edu.avif",
+        "membershipLevel": 1,
+        "description": "Providing quality education resources and tools for students of all ages."
     },
     {
-        "name": "Joina City",
-        "address": "Corner Jason Moyo Ave &, Julius Nyerere Wy, Harare",
-        "mail": "N/A",
-        "number": "(024) 2772655",
-        "url": "https://joinacity.co.zw/",
-        "image": "./images/joina.webp",
-        "level": "Gold",
-        "motto": "The heart of the city"
+        "name": "Urban Eats Cafe",
+        "address": "963 Foodie St, San Francisco, CA",
+        "phone": "456-123-7890",
+        "website": "https://www.urbaneats.com",
+        "image": "urban.avif",
+        "membershipLevel": 2,
+        "description": "A trendy cafe offering locally-sourced, delicious meals and beverages."
     }
 ]
