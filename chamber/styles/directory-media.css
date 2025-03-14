@@ -1,0 +1,31 @@
+@media (max-width: 640px) {
+    .event-container {
+        display: block;
+        gap: 11rem;
+    }
+
+    .nav-container {
+        margin: 0;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    section img {
+        height: 12rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .cir-icon i {
+        margin-top: 0;
+    }
+
+    .footer-container {
+        display: block;
+        height: 100% !important;
+    }
+}
