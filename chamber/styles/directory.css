@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
 }
 
 :root {
@@ -14,6 +16,8 @@
 
 body {
     background-color: var(--principalColor);
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
 }
 
 p,
@@ -35,8 +39,23 @@ header {
     background-color: var(--principalColor);
 }
 
-a {
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav a {
+    color: var(--whiteText);
     text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: var(--secondaryColor);
+    transition: 0.3s;
 }
 
 #menu {
