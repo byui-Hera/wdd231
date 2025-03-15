@@ -12,7 +12,6 @@
     --blackText: #1a1a1a;
 }
 
-
 body {
     background-color: var(--principalColor);
 }
@@ -98,7 +97,6 @@ main {
     position: relative;
 }
 
-
 .first-part img {
     width: 100%;
     height: 80%;
@@ -106,7 +104,6 @@ main {
     display: block;
     border-radius: 10px;
 }
-
 
 .first-part button {
     position: absolute;
@@ -165,16 +162,16 @@ h1 {
     height: 100%;
     display: grid;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 #weather p {
-    color: var(--blackText)
+    color: var(--blackText);
 }
 
 #forecast p {
     font-size: 2rem;
-    color: var(--blackText)
+    color: var(--blackText);
 }
 
 .section-part section {
@@ -243,7 +240,6 @@ h1 {
     transition: .5s;
 }
 
-
 /*thirth part*/
 .thirth-part {
     padding: 20px;
@@ -270,7 +266,7 @@ h1 {
 .list p,
 .list h3,
 .list a {
-    color: var(--blackText)
+    color: var(--blackText);
 }
 
 .member-card {
@@ -316,9 +312,6 @@ h1 {
     max-width: 100%;
     display: inline-block;
 }
-
-
-
 
 /*footer*/
 footer {
@@ -419,7 +412,6 @@ footer img {
         flex-direction: column;
         display: none;
         align-items: flex-end;
-
     }
 
     .menu a {
@@ -471,7 +463,6 @@ footer img {
         align-items: center;
     }
 }
-
 
 .section-content h4 {
     color: #000000;
