@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Hotel Titikaka",
+        "address": "Av. Costanera 123, Puno, Perú",
+        "phone": "+51 51 123456",
+        "website": "http://www.hoteltitikaka.com",
+        "image": "images/hotel_titikaka.jpg",
+        "membership_level": "Gold",
+        "description": "Luxury hotel offering stunning views of Lake Titicaca."
+    },
+    {
+        "name": "Restaurante Sabores Andinos",
+        "address": "Jr. Lima 456, Puno, Perú",
+        "phone": "+51 51 654321",
+        "website": "http://www.saboresandinos.com",
+        "image": "images/sabores_andinos.png",
+        "membership_level": "Silver",
+        "description": "Traditional Peruvian cuisine with a focus on local ingredients."
+    },
+    {
+        "name": "Agencia de Viajes Puno Tours",
+        "address": "Jr. Deustua 789, Puno, Perú",
+        "phone": "+51 51 987654",
+        "website": "http://www.punotours.com",
+        "image": "images/puno_tours_icon.jpg",
+        "membership_level": "Bronze",
+        "description": "Tour operator specializing in Lake Titicaca excursions."
+    },
+    {
+        "name": "Taller de Artesanía Qhapaq Ñan",
+        "address": "Jr. Ayacucho 321, Puno, Perú",
+        "phone": "+51 51 876543",
+        "website": "http://www.qhapaqnanart.com",
+        "image": "images/qhapaq_nan.avif",
+        "membership_level": "Bronze",
+        "description": "Handmade crafts inspired by Andean culture."
+    },
+    {
+        "name": "Centro Médico Salud Viva",
+        "address": "Av. El Sol 111, Puno, Perú",
+        "phone": "+51 51 112233",
+        "website": "http://www.saludviva.com",
+        "image": "images/salud_viva_icon.jpg",
+        "membership_level": "Silver",
+        "description": "Private health clinic providing general and specialized care."
+    },
+    {
+        "name": "Librería Titikaka",
+        "address": "Plaza de Armas 567, Puno, Perú",
+        "phone": "+51 51 998877",
+        "website": "http://www.libreriatitikaka.com",
+        "image": "images/libreria_titikaka.jpg",
+        "membership_level": "Bronze",
+        "description": "Bookstore offering a wide selection of books and educational materials."
+    },
+    {
+        "name": "Supermercado Los Andes",
+        "address": "Av. Arequipa 222, Puno, Perú",
+        "phone": "+51 51 334455",
+        "website": "http://www.superlosandes.com",
+        "image": "images/supermercado_andes.png",
+        "membership_level": "Gold",
+        "description": "Large supermarket with a variety of local and imported products."
+    }
+]

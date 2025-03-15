@@ -1,76 +1,176 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.getElementById('menuButton');
-    const navMenu = document.getElementById('navMenu');
-    const gridViewButton = document.getElementById('grid');
-    const listViewButton = document.getElementById('list');
-    const memberDirectory = document.getElementById('memberDirectory');
+document.getElementById("last-modified").textContent = document.lastModified;
 
-    menuButton.addEventListener('click', () => {
-        navMenu.classList.toggle('open');
-        if (navMenu.classList.contains('open')) {
-            menuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-        } else {
-            menuButton.innerHTML = '<i class="fa-solid fa-list"></i>';
-        }
-    });
+//Nav mobil
+const navigation = document.querySelector('.menu');
+const menuBut = document.querySelector('#menu');
+const firstPag = document.querySelector('.first-part');
 
-    gridViewButton.addEventListener('click', () => {
-        memberDirectory.classList.add('grid');
-        memberDirectory.classList.remove('list');
-        gridViewButton.classList.add('active');
-        listViewButton.classList.remove('active');
-    });
-
-    listViewButton.addEventListener('click', () => {
-        memberDirectory.classList.add('list');
-        memberDirectory.classList.remove('grid');
-        listViewButton.classList.add('active');
-        gridViewButton.classList.remove('active');
-    });
-
-    fetchMembers();
+menuBut.addEventListener('click', () => {
+    navigation.style.display = navigation.style.display === 'flex' ? 'none' : 'flex';
+    firstPag.style.marginTop = firstPag.style.marginTop === '150px' ? '0' : '150px';
 });
 
-// Fetch and display all members
-async function fetchMembers() {
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+
+
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const display = document.querySelector(".thirth-part");
+
+
+display.classList.add("grid");
+
+
+gridButton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+    loadMembers();
+});
+
+listButton.addEventListener("click", () => {
+    display.classList.add("list");
+    display.classList.remove("grid");
+    loadMembers();
+});
+
+
+
+
+async function loadMembers() {
     try {
-        const response = await fetch('data/members.json'); // Fetch JSON data
-        if (!response.ok) throw new Error("Failed to fetch member data");
+        const response = await fetch('scripts/members.json')
+        const members = await response.json();
+        const filteredMembers = members.filter(
+            (member) => member.membership_level === "Gold" || member.membership_level === "Silver"
+        );
+        const shuffledMembers = filteredMembers.sort(() => 0.5 - Math.random());
+        const spotlightMembers = shuffledMembers.slice(0, 3);
 
-        const members = await response.json(); // Get all members from JSON
+        display.innerHTML = "";
 
-        renderMembers(members); // Display ALL members on the page
+        spotlightMembers.forEach((member, index) => {
+            if (display.classList.contains("grid")) {
+                const card = document.createElement("div");
+                card.classList.add("member-card");
 
+                card.innerHTML = `
+                  <div class="card">
+                    <div class="image-placeholder">
+                      <h3>${member.name}</h3>
+                      <p>${member.description || 'Business Tag Line'}</p>
+                    </div>
+                    <hr>
+                    <div class="info">
+                      <img src="${member.image}" alt="${member.name}" width= 80>
+                      <div>                      
+                        <p><strong>PHONE:</strong> ${member.phone}</p>
+                        <p><strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                        <p><strong>MEMBERSHIP LEVEL:</strong> ${member.membership_level}</p>
+                      </div>
+                    </div>
+                  </div>
+                `;
+                display.appendChild(card);
+            } else if (display.classList.contains("list")) {
+                const row = document.createElement("div");
+                row.classList.add("member-row");
+
+                row.style.backgroundColor = index % 2 === 0 ? "#9c9c9c93" : "#ffffff93";
+
+                row.innerHTML = `
+                          <div class="row">
+                            <h3>${member.name}</h3>
+                            <p><strong>PHONE:</strong> ${member.phone}</p>
+                            <p><strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                            <p><strong>MEMBERSHIP LEVEL:</strong> ${member.membership_level}</p>
+                          </div>
+                        `;
+                display.appendChild(row);
+            }
+        });
     } catch (error) {
-        console.error("Error fetching members:", error);
-        document.getElementById('memberDirectory').innerHTML = '<p>Failed to load member data.</p>';
+        console.error('Error loading members:', error);
     }
 }
 
-// Render member data in grid or list view
-function renderMembers(members) {
-    const container = document.getElementById('memberDirectory');
-    container.innerHTML = ''; // Clear existing content
 
-    members.forEach(member => {
-        const memberCard = document.createElement('div');
-        memberCard.className = 'member-card';
+loadMembers();
 
-        memberCard.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name}">
-      <h2>${member.name}</h2>
-      <p><strong>Address:</strong> ${member.address}</p>
-      <p><strong>Phone:</strong> ${member.phone}</p>
-      <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
-      <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
-      <p>${member.description}</p>
-    `;
+const apiKey = "3d039834201b427cfc00f8f1338afbe1";
+const lat = -15.8402;
+const lon = -70.0219;
 
-        container.appendChild(memberCard);
-    });
+const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+
+async function getWeather() {
+    try {
+        const currentWeatherResponse = await fetch(currentWeatherUrl);
+        const currentData = await currentWeatherResponse.json();
+
+        const currentTemp = Math.round(currentData.main.temp);
+        const currentDesc = currentData.weather[0].description.toUpperCase();
+        const humidity = currentData.main.humidity;
+        const sunrise = new Date(currentData.sys.sunrise * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const sunset = new Date(currentData.sys.sunset * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        const iconImg = currentData.weather[0].icon;
+        const iconsrc = `https://openweathermap.org/img/wn/${iconImg}.png`;
+
+
+        document.getElementById('icon').setAttribute('src', iconsrc);
+        document.getElementById('current-temp').textContent = `${currentTemp}°F`;
+        document.getElementById('current-desc').textContent = `${currentDesc}`;
+        document.getElementById('humidity').textContent = `HUMIDITY: ${humidity}%`;
+        document.getElementById('sunrise').textContent = `SUNRISE: ${sunrise}`;
+        document.getElementById('sunset').textContent = `SUNSET: ${sunset}`;
+
+        const forecastResponse = await fetch(forecastUrl);
+        const forecastData = await forecastResponse.json();
+
+        const now = new Date();
+        const localNow = new Date(now.getTime() - 5 * 60 * 60 * 1000);
+
+        const todayTemps = forecastData.list.filter(item => {
+            const itemDate = new Date(item.dt_txt);
+            const localItemDate = new Date(itemDate.getTime() - 5 * 60 * 60 * 1000);
+            return localItemDate >= localNow && localItemDate <= new Date(localNow.getTime() + 24 * 60 * 60 * 1000);
+        });
+
+        const todayHigh = Math.round(Math.max(...todayTemps.map(item => item.main.temp_max)));
+        const todayLow = Math.round(Math.min(...todayTemps.map(item => item.main.temp_min)));
+
+        document.getElementById('current-high').textContent = `HIGH: ${todayHigh}°`;
+        document.getElementById('current-low').textContent = `LOW: ${todayLow}°`;
+
+        const forecastElement = document.getElementById('forecast');
+        forecastElement.innerHTML = '';
+
+        const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        for (let i = 1; i <= 3; i++) {
+            const start = new Date(localNow.getTime() + i * 24 * 60 * 60 * 1000);
+            const end = new Date(localNow.getTime() + (i + 1) * 24 * 60 * 60 * 1000);
+
+            const dayTemps = forecastData.list.filter(item => {
+                const itemDate = new Date(item.dt_txt);
+                const localItemDate = new Date(itemDate.getTime() - 5 * 60 * 60 * 1000);
+                return localItemDate >= start && localItemDate < end;
+            });
+
+            const avgTemp = Math.round(
+                dayTemps.reduce((sum, item) => sum + item.main.temp, 0) / dayTemps.length
+            );
+
+            const dayName = daysOfWeek[start.getDay()];
+            const listItem = document.createElement('p');
+            listItem.innerHTML = `${dayName}: <strong>${avgTemp}°F</strong>`;
+            forecastElement.appendChild(listItem);
+        }
+    } catch (error) {
+        console.error("Error fetching weather data:", error);
+    }
 }
 
-// Get membership level name
-function getMembershipLevel(level) {
-    return level === 3 ? 'Gold' : level === 2 ? 'Silver' : 'Bronze';
-}
+getWeather();
