@@ -471,3 +471,10 @@ footer img {
         align-items: center;
     }
 }
+
+
+.section-content h4 {
+    color: #000000;
+    background-color: #f0f0f0;
+    /* Changed to a slightly darker background for better contrast */
+}
