@@ -343,7 +343,7 @@ footer img {
 
 .modification,
 .modification span {
-    color: var(--tertiaryColor);
+    color: var(--blackText);
 }
 
 .first-part-footer {
