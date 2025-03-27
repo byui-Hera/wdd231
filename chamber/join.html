@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore the Chamber of Commerce Directory for Tirana, Albania. Discover local businesses, resources, and initiatives supporting the growth and development of the community." />
+    <meta name="author" content="Hera Hysi">
+
+    <meta property="og:title" content="Pusness chamber Join - Tirana" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://byui-hera.github.io/wdd231/chamber/join.html" />
+    <meta property="og:image" content="https://byui-hera.github.io/wdd231/chamber/images/pusnessnewlogo.png" />
+
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/pusnessicon.ico">
+
+    <title>Pusness Chamber Commerce - Join</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-section">
+            <a href="https://byui-hera.github.io/wdd231/chamber"><img src="images/pusnessnewlogo.png"
+                    alt="Pusness Logo" width="180"></a>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+        <button id="menu">☰</button>
+    </header>
+    <main id="main">
+        <div class="first-part">
+            <div class="title">
+                <h1>Membership Levels</h1>
+            </div>
+            <div class="membership-container">
+                <div class="membership-card" onclick="toggleContent('np-content')">
+                    <h3>Non Profit Membership</h3>
+                    <h4>⇨ Learn More</h4>
+                    <div id="np-content" class="membership-content">
+                        Benefits: Free access to networking events, basic business listing, and community involvement.
+                    </div>
+                </div>
+                <div class="membership-card" onclick="toggleContent('bronze-content')">
+                    <h3>Bronze Membership</h3>
+                    <h4>⇨ Learn More</h4>
+                    <div id="bronze-content" class="membership-content">
+                        Benefits: Includes all Non-Profit benefits plus social media promotions and event discounts.
+                    </div>
+                </div>
+                <div class="membership-card" onclick="toggleContent('silver-content')">
+                    <h3>Silver Membership</h3>
+                    <h4>⇨ Learn More</h4>
+                    <div id="silver-content" class="membership-content">
+                        Benefits: Includes all Bronze benefits plus featured business spotlights and training sessions.
+                    </div>
+                </div>
+                <div class="membership-card" onclick="toggleContent('gold-content')">
+                    <h3>Gold Membership</h3>
+                    <h4>⇨ Learn More</h4>
+                    <div id="gold-content" class="membership-content">
+                        Benefits: Includes all Silver benefits plus priority sponsorship opportunities and VIP event
+                        access.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form action="thankyou.html" method="get">
+                <h2>Personal Information</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" title="Applicant's First Name"
+                    autocomplete="given-name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" title="Applicant's Last Name"
+                    autocomplete="family-name" required>
+
+                <label for="organization-title">Organizational Title</label>
+                <!-- A pattern is applied to the title field that requires at least 7 alpha, hyphens, and spaces only. -->
+                <input type="text" id="organization-title" name="organization-title" title="Organizational Title"
+                    autocomplete="organization-title" pattern="^[a-zA-Z\-\s]{7,}$" required>
+
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" title="Email Address" autocomplete="email"
+                    placeholder="example@email.com" required>
+
+                <label for="phone">Mobile Phone Number</label>
+                <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                <hr>
+                <h2>Business Information</h2>
+                <label for="organization-name">Business/Organization Name</label>
+                <input type="text" id="organization-name" name="organization-name" title="Business/Organization Name"
+                    autocomplete="organization" required>
+
+                <label for="membership-level">Membership Level</label>
+                <select id="membership-level" name="membership-level" title="Membership Level" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="np">NP Membership (No Fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+
+                <label for="organization-description">Business/Organization Description</label>
+                <textarea id="organization-description" name="organization-description"
+                    title="Business/Organization Description" rows="4"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="first-part-footer">
+            <p>Pusness Chamber of Commerce</p>
+            <p>Tirana, Albania 21001</p>
+            <p>Jr. Ayacucho #736</p>
+            <p>info@pusness.org</p>
+            <p>+355 67 405 9000</p>
+        </div>
+        <div class="second-part-footer">
+            <img src="images/icon-youtube.webp" alt="Youtube Icon" width="30">
+            <img src="images/icon-x.webp" alt="X Icon" width="30">
+            <img src="images/icon-linkedin.webp" alt="LinkedIn Icon" width="30">
+        </div>
+        <div class="thirth-part-footer">
+            <p>WDD231 Class Project</p>
+            <p>Hera Hysi</p>
+            <p>© <span id="currentyear"></span> Pusness Chamber of Commerce</p>
+            <p class="modification">Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/join.js" defer></script>
+</body>
+
+</html>

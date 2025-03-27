@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thank you for Join Pusness Chamber Commerce!" />
+    <meta name="author" content="Hera Hysi">
+
+    <meta property="og:title" content="Pusness Thank You" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://byui-hera.github.io/wdd231/chamber/thankyou.html" />
+    <meta property="og:image" content="https://byui-hera.github.io/wdd231/chamber/images/ogImagePusness.webp" />
+
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/pusnessicon.ico">
+
+    <title>Pusness Chamber - Thank You</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-section">
+            <a href="https://byui-hera.github.io/wdd231/chamber"><img src="images/pusnessnewlogo.png"
+                    alt="Pusness Logo" width="180"></a>
+        </div>
+        <nav class="menu">
+            <a href="/chamber">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+        <button id="menu">☰</button>
+    </header>
+    <main>
+        <div class="info-container">
+            <h2>Thank You for Joining!</h2>
+            <p>Your application has been submitted successfully. Here are the details you provided:</p>
+            <div class="confirmation-details">
+                <p><strong>First Name:</strong> <span id="first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Number:</strong> <span id="phone"></span></p>
+                <p><strong>Business Name:</strong> <span id="organization-name"></span></p>
+                <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="first-part-footer">
+            <p>Pusness Chamber of Commerce</p>
+            <p>Tirana, Albania 21001</p>
+            <p>Jr. Ayacucho #736</p>
+            <p>info@pusness.org</p>
+            <p>+355 67 405 9000</p>
+        </div>
+        <div class="second-part-footer">
+            <img src="images/icon-youtube.webp" alt="Youtube Icon" width="30">
+            <img src="images/icon-x.webp" alt="X Icon" width="30">
+            <img src="images/icon-linkedin.webp" alt="LinkedIn Icon" width="30">
+        </div>
+        <div class="thirth-part-footer">
+            <p>WDD231 Class Project</p>
+            <p>Hera Hysi</p>
+            <p>© <span id="currentyear"></span> Pusness Chamber of Commerce</p>
+            <p class="modification">Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/join.js" defer></script>
+</body>
+
+</html>
