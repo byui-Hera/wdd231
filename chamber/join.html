@@ -9,7 +9,7 @@
     <meta name="author" content="Hera Hysi">
 
     <meta property="og:title" content="Pusness chamber Join - Tirana" />
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://byui-hera.github.io/wdd231/chamber/join.html" />
     <meta property="og:image" content="https://byui-hera.github.io/wdd231/chamber/images/pusnessnewlogo.png" />
 
@@ -88,10 +88,8 @@
                     autocomplete="family-name" required>
 
                 <label for="organization-title">Organizational Title</label>
-                <!-- A pattern is applied to the title field that requires at least 7 alpha, hyphens, and spaces only. -->
                 <input type="text" id="organization-title" name="organization-title" title="Organizational Title"
                     autocomplete="organization-title" pattern="^[a-zA-Z\-\s]{7,}$" required>
-
 
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" title="Email Address" autocomplete="email"
@@ -118,7 +116,7 @@
                 <textarea id="organization-description" name="organization-description"
                     title="Business/Organization Description" rows="4"></textarea>
 
-                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="hidden" id="timestamp" name="timestamp" value="">
 
                 <input type="submit" value="Submit Application">
             </form>
