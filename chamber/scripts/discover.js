@@ -1,11 +1,11 @@
 document.getElementById("last-modified").textContent = document.lastModified;
+
 function toggleContent(id) {
     const content = document.getElementById(id);
     if (content) {
         content.classList.toggle("active");
     }
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const now = new Date();
@@ -17,30 +17,50 @@ document.addEventListener("DOMContentLoaded", function () {
         timestampField.value = `${formattedDate} | ${formattedTime}`;
     }
 
-
     const navigation = document.querySelector('.menu');
     const menuBut = document.querySelector('#menu');
     const title = document.querySelector('.title');
-
 
     menuBut.addEventListener('click', () => {
         navigation.style.display = navigation.style.display === 'flex' ? 'none' : 'flex';
         title.style.top = title.style.top == '170px' ? '70px' : '170px';
     });
 
-
-
     const yearElement = document.getElementById('currentyear');
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
+
+    // Handle last visit message using localStorage
+    const lastVisitKey = 'lastVisitDate';
+    const visitorMessageElement = document.querySelector('.visitor-message');
+
+    if (visitorMessageElement) {
+        const lastVisit = localStorage.getItem(lastVisitKey);
+        const currentVisit = now.getTime();
+
+        if (lastVisit) {
+            const lastVisitDate = new Date(parseInt(lastVisit));
+            const timeDifference = currentVisit - lastVisitDate.getTime();
+            const daysSinceLastVisit = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+            if (timeDifference < 1000 * 60 * 60 * 24) {
+                visitorMessageElement.textContent = "Back so soon! Awesome!";
+            } else if (daysSinceLastVisit === 1) {
+                visitorMessageElement.textContent = "You last visited 1 day ago.";
+            } else {
+                visitorMessageElement.textContent = `You last visited ${daysSinceLastVisit} days ago.`;
+            }
+        } else {
+            visitorMessageElement.textContent = "Welcome! Let us know if you have any questions.";
+        }
+
+        // Update localStorage with the current visit date
+        localStorage.setItem(lastVisitKey, currentVisit.toString());
+    }
 });
 
-
-
-//List of items
-
-
+// List of items
 const display = document.querySelector(".thirth-part");
 
 async function loadMembers() {
@@ -97,5 +117,3 @@ async function loadMembers() {
 }
 
 loadMembers();
-
-
