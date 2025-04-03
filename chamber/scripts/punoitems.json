@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Puno Cathedral",
+        "address": "Jr. Ayacucho 416, Puno, Peru",
+        "cost": "Free",
+        "phone": "+51 987654321",
+        "website": "http://www.punocathedral.com",
+        "image": "images/puno_cathedral.webp",
+        "membership_level": "Gold",
+        "description": "Built in 1757, this baroque-mestizo cathedral is an architectural symbol of the city."
+    },
+    {
+        "name": "Carlos Dreyer Museum",
+        "address": "Conde de Lemos 289, Puno, Peru",
+        "cost": "5 soles",
+        "phone": "+51 987654322",
+        "website": "http://www.carlosdreyerpuno.com",
+        "image": "images/carlos_dreyer_museum.webp",
+        "membership_level": "Silver",
+        "description": "Museum showcasing a collection of pre-Inca, Inca, and colonial artifacts, including ceramics and gold and silver objects."
+    },
+    {
+        "name": "Casa del Corregidor",
+        "address": "Jr. Deustua 576, Puno, Peru",
+        "cost": "Free",
+        "phone": "+51 987654323",
+        "website": "http://www.casadelcorregidor.com",
+        "image": "images/casa_del_corregidor.webp",
+        "membership_level": "Gold",
+        "description": "A 17th-century colonial house hosting a café and a local crafts store."
+    },
+    {
+        "name": "Plaza Vea Puno",
+        "address": "Av. La Torre 123, Puno, Peru",
+        "cost": "Free",
+        "phone": "+51 987654324",
+        "website": "https://www.plazavea.com.pe",
+        "image": "images/plaza_vea_puno.webp",
+        "membership_level": "Bronze",
+        "description": "Supermarket offering a wide variety of local and imported products."
+    },
+    {
+        "name": "Mojsa Restaurant",
+        "address": "Jr. Lima 635, Puno, Peru",
+        "cost": "Dishes from 30 soles",
+        "phone": "+51 987654325",
+        "website": "http://www.mojsarestaurant.com",
+        "image": "images/mojsa_restaurant.webp",
+        "membership_level": "Silver",
+        "description": "A renowned restaurant serving contemporary Peruvian cuisine with views of the Main Square."
+    },
+    {
+        "name": "Hotel Libertador Lake Titicaca",
+        "address": "Esteves Island s/n, Puno, Peru",
+        "cost": "Rooms from 400 soles",
+        "phone": "+51 987654326",
+        "website": "https://www.libertador.com.pe",
+        "image": "images/hotel_libertador_puno.webp",
+        "membership_level": "Gold",
+        "description": "Luxury hotel located on a private island with panoramic views of Lake Titicaca."
+    },
+    {
+        "name": "Central Market of Puno",
+        "address": "Jr. Lampa with Jr. Tacna, Puno, Peru",
+        "cost": "Free",
+        "phone": "+51 987654327",
+        "website": "http://www.centralmarketpuno.com",
+        "image": "images/central_market_puno.webp",
+        "membership_level": "Bronze",
+        "description": "Traditional market where fresh produce and local handicrafts can be found."
+    },
+    {
+        "name": "Inka's Expression",
+        "address": "Jr. Lima 552, Puno, Peru",
+        "cost": "Free",
+        "phone": "+51 987654328",
+        "website": "http://www.inkasexpression.com",
+        "image": "images/inkas_expression.webp",
+        "membership_level": "Silver",
+        "description": "Handicraft shop offering a variety of Andean textile products and souvenirs."
+    }
+]
+
