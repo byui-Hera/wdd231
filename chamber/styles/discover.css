@@ -392,3 +392,63 @@ h1 {
 }
 
 
+.info button {
+    grid-column: 1 / -1;
+    width: 70%;
+    /* Default width for larger screens */
+    height: 40px;
+    /* Increased height for better touch target */
+    margin: 0 auto;
+    /* Center the button horizontally and add spacing above */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the link inside the button */
+    background-color: var(--tertiaryColor);
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    /* Added padding for better touch area */
+    cursor: pointer;
+    position: relative;
+    /* Allow positioning adjustments */
+}
+
+/* Style the link inside the button */
+.items-link {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: var(--blackText);
+    font-size: 1rem;
+    padding: 5px 10px;
+    /* Add padding inside the link for spacing */
+    display: inline-block;
+    /* Ensure the padding is applied properly */
+}
+
+/* Add hover effect for better user experience */
+.info button:hover {
+    background-color: var(--secondaryColor);
+    transition: background-color 0.3s ease;
+}
+
+/* Adjust the button for smaller screens */
+@media (max-width: 768px) {
+    .info button {
+        margin-top: 30px;
+        /* Add more spacing above the button */
+        width: 80%;
+        /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .info button {
+        margin-top: 40px;
+        /* Further increase spacing above the button */
+        width: 90%;
+        /* Make the button wider for very small screens */
+    }
+}
