@@ -360,6 +360,28 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Adjust visitor-message for mobile devices */
+@media (max-width: 768px) {
+    .visitor-message {
+        padding: 10px;
+        /* Reduce padding */
+        font-size: 1rem;
+        /* Decrease font size */
+        max-width: 90%;
+        /* Make it fit better on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .visitor-message {
+        padding: 8px;
+        /* Further reduce padding for very small screens */
+        font-size: 0.9rem;
+        /* Slightly smaller font size */
+        max-width: 95%;
+        /* Allow more flexibility for very small screens */
+    }
+}
 
 
 
@@ -376,4 +398,72 @@ h2 {
 h3 {
     font-size: 1.5rem;
     margin-top: 15px;
+}
+
+/* Ensure the button has sufficient size and spacing */
+.info button {
+    grid-column: 1 / -1;
+    width: 70%;
+    /* Default width for larger screens */
+    height: 40px;
+    /* Increased height for better touch target */
+    margin: 0.4 auto;
+    /* Center the button horizontally */
+    position: relative;
+    /* Allow positioning adjustments */
+    top: -20px;
+    /* Move the button higher in the middle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the link inside the button */
+    background-color: var(--tertiaryColor);
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    /* Added padding for better touch area */
+    cursor: pointer;
+}
+
+/* Style the link inside the button */
+.items-link {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: var(--blackText);
+    font-size: 1rem;
+    padding: 5px 10px;
+    /* Add padding inside the link for spacing */
+    display: inline-block;
+    /* Ensure the padding is applied properly */
+}
+
+/* Add hover effect for better user experience */
+.info button:hover {
+    background-color: var(--secondaryColor);
+    transition: background-color 0.3s ease;
+}
+
+/* Adjust the button for smaller screens */
+@media (max-width: 768px) {
+    .info button {
+        top: 0;
+        /* Reset the position for smaller screens */
+        margin-top: 40px;
+        /* Increase margin-top to move the button further down */
+        width: 80%;
+        /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .info button {
+        top: 0;
+        /* Reset the position for very small screens */
+        margin-top: 50px;
+        /* Further increase margin-top for very small screens */
+        width: 90%;
+        /* Make the button wider for smaller screens */
+    }
 }
