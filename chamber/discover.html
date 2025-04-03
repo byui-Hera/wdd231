@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Join us and explore the best recommended places to visit in Puno, Peru. Discover breathtaking landscapes, cultural sites, and hidden gems!" />
+    <meta name="description"
+        content="Join us and explore the best recommended places to visit in Puno, Peru. Discover breathtaking landscapes, cultural sites, and hidden gems!" />
     <meta name="author" content="Hera Hysi">
 
     <meta property="og:title" content="Pusness Discover" />
@@ -26,11 +27,11 @@
 <body>
     <header>
         <div class="logo-section">
-            <a href="https://josue-burkhan.github.io/wdd231/chamber"><img src="images/pusnessnewlogo.png"
+            <a href="https://byui-hera.github.io/wdd231/chamber"><img src="images/pusnessnewlogo.png"
                     alt="Pusness Logo" width="180"></a>
         </div>
         <nav class="menu">
-            <a href="/chamber">Home</a>
+            <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
             <a href="discover.html">Discover</a>
@@ -39,6 +40,12 @@
     </header>
     <main id="main">
         <h1>Recommended places in Puno</h1>
+    
+        <!-- Sidebar for visitor message -->
+        <aside id="visitor-message" class="visitor-message">
+            <!-- Message will be dynamically inserted here -->
+        </aside>
+    
         <div class="thirth-part grid">
         </div>
     </main>
@@ -64,6 +71,7 @@
         </div>
     </footer>
     <script src="scripts/discover.js" defer></script>
+    <script src="scripts/visitorMessage.js" defer></script>
 </body>
 
 </html>
