@@ -347,49 +347,20 @@ h1 {
     }
 }
 
-
-/* General styles for the visitor message sidebar */
 .visitor-message {
-    background-color: #e8c07d;
-    /* Light background for better readability */
-    border: 1px solid #1a1a1a;
-    /* Subtle border */
+    background-color: var(--tertiaryColor);
+    border: 1px solid var(--blackText);
     border-radius: 8px;
-    /* Rounded corners */
-    padding: 20px;
-    /* Space inside the box */
+    padding: 15px;
     margin: 20px auto;
-    /* Center the box horizontally */
     max-width: 600px;
-    /* Limit the width */
     text-align: center;
-    /* Center the text */
-    font-family: 'Inria Sans', sans-serif;
-    /* Match the font with the rest of the site */
     font-size: 1.2rem;
-    /* Slightly larger font for emphasis */
-    color: #333;
-    /* Dark text color for contrast */
+    color: var(--blackText);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
 }
 
-/* Add some spacing between the visitor message and other elements */
-.visitor-message+* {
-    margin-top: 20px;
-}
 
-/* Responsive design: Adjust the visitor message for smaller screens */
-@media (max-width: 768px) {
-    .visitor-message {
-        padding: 10px;
-        /* Reduce padding */
-        font-size: 0.9rem;
-        /* Slightly smaller font size */
-        max-width: 90%;
-        /* Reduce max-width for smaller screens */
-    }
-}
 
 
 h1 {
