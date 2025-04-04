@@ -392,26 +392,31 @@ h1 {
 }
 
 
+/* Style the button */
 .info button {
     grid-column: 1 / -1;
-    width: 70%;
-    /* Default width for larger screens */
+    width: 90%;
+    /* Ensure consistent width */
     height: 40px;
-    /* Increased height for better touch target */
-    margin: 0 auto;
-    /* Center the button horizontally and add spacing above */
+    /* Slightly increase height for better touch target */
+    margin: auto;
+    /* Center the button horizontally */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Center the link inside the button */
     background-color: var(--tertiaryColor);
     border: none;
     border-radius: 30px;
-    padding: 10px;
-    /* Added padding for better touch area */
+    padding: 10px 20px;
+    /* Add padding for better touch area */
     cursor: pointer;
     position: relative;
-    /* Allow positioning adjustments */
+    top: 40%;
+    /* Adjust the button's vertical position */
+    transform: translateY(-60%);
+    /* Move the button slightly upward */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Add smooth hover effect */
 }
 
 /* Style the link inside the button */
@@ -423,37 +428,39 @@ h1 {
     color: var(--blackText);
     font-size: 1rem;
     padding: 5px 10px;
-    /* Add padding inside the link for spacing */
+    /* Add padding for spacing */
     display: inline-block;
-    /* Ensure the padding is applied properly */
 }
 
 /* Add hover effect for better user experience */
 .info button:hover {
     background-color: var(--secondaryColor);
-    transition: background-color 0.3s ease;
+    transform: translateY(-60%) scale(1.05);
+    /* Slightly enlarge the button on hover */
 }
 
 /* Adjust the button for smaller screens */
 @media (max-width: 768px) {
     .info button {
-        margin-top: 30px;
-        /* Add more spacing above the button */
         width: 80%;
         /* Adjust width for smaller screens */
+        top: 40%;
+        /* Ensure vertical centering */
+        transform: translateY(-60%);
+        /* Maintain vertical alignment */
     }
 }
 
 @media (max-width: 480px) {
     .info button {
-        margin-top: 40px;
-        /* Further increase spacing above the button */
         width: 90%;
         /* Make the button wider for very small screens */
+        top: 40%;
+        /* Ensure vertical centering */
+        transform: translateY(-60%);
+        /* Maintain vertical alignment */
     }
 }
-
-
 /* General heading styles */
 h1 {
     font-size: 3rem;
