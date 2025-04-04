@@ -495,4 +495,8 @@ h4 {
     }
 }
 
-
+.menu a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--secondaryColor);
+}
