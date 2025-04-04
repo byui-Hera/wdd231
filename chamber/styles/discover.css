@@ -487,3 +487,10 @@ h4 {
     margin: 8px 0;
 }
 
+@media (min-width: 768px) {
+    .image:hover {
+        filter: brightness(0.8);
+        transform: scale(1.05);
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+}
