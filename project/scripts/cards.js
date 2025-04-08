@@ -8,6 +8,7 @@ export async function loadProducts(dataFile) {
     }
 }
 
+
 async function getDataInfo(dataJSON) {
     const response = await fetch(dataJSON);
     if (!response.ok) {
@@ -15,6 +16,7 @@ async function getDataInfo(dataJSON) {
     }
     return await response.json();
 }
+
 
 const displayProducts = (products) => {
     const cards = document.getElementById("cards");
@@ -40,18 +42,22 @@ const displayProducts = (products) => {
         productName.innerHTML = product.productName;
         productDescription.innerHTML = product.description;
 
+      
         productPrice.classList.add("price-display");
         productPrice.innerHTML = `$${product.priceS}`;
 
+        
         productSizeButtons.classList.add("size-buttons");
 
+       
         const sizes = product.additionsInfo.sizes;
         Object.keys(sizes).forEach(sizeKey => {
-            const sizeLabel = sizes[sizeKey];
+            const sizeLabel = sizes[sizeKey]; // 'S', 'M', etc.
             const sizeButton = document.createElement("button");
             sizeButton.innerHTML = sizeLabel;
             sizeButton.classList.add("size-button");
 
+           
             sizeButton.addEventListener("click", () => {
                 let selectedPrice;
                 switch (sizeKey) {
@@ -66,10 +72,12 @@ const displayProducts = (products) => {
             productSizeButtons.appendChild(sizeButton);
         });
 
+    
         const cartIcon = document.createElement("img");
-        cartIcon.setAttribute("src", "./images/cart.png");
+        cartIcon.setAttribute("src", "./images/cart.png"); 
         cartIcon.setAttribute("alt", "Add to the cart");
         cartIcon.classList.add("cart-icon");
+
 
         cartIcon.onclick = () => {
             cartMessage.innerHTML = "Product Added to the Cart";
@@ -78,17 +86,19 @@ const displayProducts = (products) => {
             setTimeout(() => {
                 cartMessage.classList.remove("show");
                 cartMessage.innerHTML = "";
-            }, 1000);
+            }, 1000); 
         };
 
+    
         card.appendChild(productImg);
         card.appendChild(productName);
         card.appendChild(productDescription);
         card.appendChild(productPrice);
         card.appendChild(productSizeButtons);
         card.appendChild(cartIcon);
-        card.appendChild(cartMessage);
+        card.appendChild(cartMessage); 
 
         cards.appendChild(card);
     });
 };
+
