@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estevas Garden Snack Bar</title>
+
+    <!-- Descrição e Autor -->
+    <meta name="description"
+        content="Welcome to Estevas Garden Snack Bar - Immerse yourself in a unique experience with Brazilian cuisine and its flavors, as well as drinks and enjoy a welcoming and relaxing atmosphere.">
+    <meta name="author" content="Hera Hysi">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon-2_2_11zon.webp" type="image/png">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles/styles.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </noscript>
+
+    <!-- Fonte Google Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+
+    <!-- Meta Tags para Redes Sociais (Open Graph) -->
+    <meta property="og:site_name" content="Estevas Garden Snack Bar">
+    <meta property="og:title" content="Estevas Garden Snack Bar - Brazilian cuisine and its flavors">
+    <meta property="og:description"
+        content="Immerse yourself in the unique flavors and cozy atmosphere of Estevas Garden Snack Bar. Perfect for relaxing and enjoying!">
+    <meta property="og:url" content="https://byui-hera.github.io/wdd231/project/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Meta para Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Estevas Garden Snack Bar">
+    <meta name="twitter:description"
+        content="Immerse yourself in the unique flavors and cozy atmosphere of Estevas Garden Snack Bar. Perfect for relaxing and enjoying!">
+
+  
+    <script defer src="./scripts/hamburger.js"></script>
+    <script defer src="./scripts/time.js"></script>
+    <script defer src="./scripts/carrocel6.js"></script>
+    <script defer src="./scripts/wayfinding.js"></script>
+    <script defer src="./scripts/apiweather.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Menu de navegação -->
+        <nav class="menu">
+
+            <!-- Logo (normal e responsivo) -->
+            <!-- Botão do menu hambúrguer -->
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="logo-modo-responsivo">
+                <img src="./images/logo-estevas-completo_11zonlower.webp" alt="Logo Estevas Garden" class="logocomplete"
+                    width="250" height="146" loading="lazy">
+            </div>
+            <div class="logo">
+                <img src="./images/logoT1.png" alt="Logo Estevas Garden" class="logo-name" width="350" height="97"
+                    loading="lazy">
+            </div>
+            <!-- Links de navegação -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="beverages.html">Beverages</a></li>
+                <li><a href="sweets.html">Sweets</a></li>
+                <li><a href="form.html">Contact us</a></li>
+                <li><a href="snacks.html">Order Now</a></li>
+            </ul>
+
+            <!-- Ícones de redes sociais -->
+            <ul class="social-media">
+                <li class="face">
+                    <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page"></a>
+                </li>
+                <li class="insta">
+                    <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram profile"></a>
+                </li>
+                <li class="twitter">
+                    <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter profile"></a>
+                </li>
+                <li class="talktous">
+                    <a href="./form.html" target="_blank" aria-label="Talk to us via form"></a>
+                </li>
+                <li class="email">
+                    <a href="mailto:geral@estevasgarden.com" aria-label="Send us an email"></a>
+                </li>
+            </ul>
+
+            <div class="weather-info">
+                <img id="weather-icon" alt="Weather Icon">
+                <p><span id="current-temp"></span>ºc</p>
+            </div>
+
+
+        </nav>
+    </header>
+    <main>
+        <!--hero area-->
+        <!--<div class="welcome-title" style="--background: ">
+        <h1>Welcome to <br><span class="highlight">ESTEVAS GARDEN SNACK BAR</span></h1>  
+    </div>-->
+        <section aria-label="Newest Photos">
+            <!--<h1>Welcome to <br><span class="highlight">ESTEVAS GARDEN SNACK BAR</span></h1>-->
+            <div class="carrocel">
+                <button class="carrocel-button prev">
+                    </button>
+                        <button class="carrocel-button next">></button>
+                        <div class="hero-button">
+                            <h1 id="welcome-title">Welcome to</h1>
+                            <p>ESTEVAS GARDEN</p>
+                            <p>SNACK BAR</p>
+                            <button class="contact-button" onclick="window.location.href='snacks.html'">ORDER
+                                NOW<br><span class="add">GET 10% OFF</span></button>
+
+                        </div>
+                        <ul>
+                            <li class="slide" style="--background: #dc4f0f">
+                                <img src="./images/Morango-refrigerante1_11zon.webp" width="911" height="1252"
+                                    alt="strawberry juice image" loading="lazy">
+                            </li>
+                            <li class="slide active" style="--background: #7bbd00">
+                                <img id="bkg2" src="./images/bkg2.webp" alt="orange juice image" width="1620"
+                                    height="720" loading="lazy">
+                            </li>
+                            <li class="slide" style="--background: #FDB400">
+                                <img id="bkg3" src="./images/bkg33.webp" alt="smoothie punch juice image" width="1200"
+                                    height="708" loading="lazy">
+                            </li>
+
+                            <li class="slide" style="--background: rgba(1, 184, 153, 0.8);">
+                                <img id="soft-drinks" src="./images/tacasjuntas_11zon.webp" alt="soft drinks image"
+                                    width="800" height="691" loading="lazy">
+                            </li>
+                        </ul>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<footer>
+    <!-- Logo Area -->
+    <div class="logo-area">
+        <img src="./images/logo-estevas-completo_11zon.webp" alt="Logo Estevas Garden" width="450" height="262">
+    </div>
+
+    <!-- Icons and Links Area -->
+    <div class="icons-links-area">
+
+        <!-- Links de Navegação -->
+        <div>
+            <ul class="nav-links-footer">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="beverages.html">Beverages</a></li>
+                <li><a href="sweets.html">Sweets</a></li>
+                <li><a href="form.html">Contact us</a></li>
+                <li><a href="sweets.html">Order</a></li>
+            </ul>
+        </div>
+        <!-- Navegação por Ícones -->
+        <div>
+
+            <ul class="nav-links-icones">
+                <li><a href="/index.html" class="home"><img src="./images/home40x40png.png" alt="Home" width="40"
+                            height="40"></a></li>
+                <li><a href="beverages.html" class="bubbletea"><img src="./images/bubbletea40x40png.png"
+                            alt="Bubble Tea" width="40" height="40"></a></li>
+                <li><a href="sweets.html" class="cakes"><img src="./images/cake40x40png.png" alt="Cakes" width="40"
+                            height="40"></a></li>
+                <li><a href="snacks.html" class="snacks"><img src="./images/snack40x40png.png" alt="Snacks" width="40"
+                            height="40"></a></li>
+                <li><a href="sweets.html" class="order"><img src="./images/order40x40png.png" alt="Order sweets"
+                            width="40" height="40"></a></li>
+
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!-- Direitos Autorais -->
+    <div class="author-rights">
+        <!-- Redes Sociais -->
+        <div>
+            <ul class="social-media">
+                <li class="face"><a href="https://facebook.com" target="_blank" aria-label="Facebook"></a></li>
+                <li class="insta"><a href="https://instagram.com" target="_blank" aria-label="Instagram"></a></li>
+                <li class="twitter"><a href="https://twitter.com" target="_blank" aria-label="Twitter"></a></li>
+                <li class="talktous"><a href="form.html" target="_blank" aria-label="Talk to Us"></a></li>
+                <li class="email"><a href="mailto:geral@estevasgarden.com" aria-label="Email"></a></li>
+            </ul>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Hera Hysi | Albania</p>
+
+    </div>
+</footer>
+
+</html>
