@@ -1,0 +1,138 @@
+[
+    {
+        "icon": "./images/coca383x384.webp",
+        "productName": "Coca-Cola",
+        "description": "Soda 200cal.",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "S",
+                "medium": "M",
+                "large": "L",
+                "extraLarge": "XL"
+            }
+        }
+    },
+    {
+        "icon": "./images/sprite_11zon.webp",
+        "productName": "Sprite",
+        "description": "Soda 190cal.",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "S",
+                "medium": "M",
+                "large": "L",
+                "extraLarge": "XL"
+            }
+        }
+    },
+    {
+        "icon": "./images/drpaper_11zon.webp",
+        "productName": "Dr Pepper",
+        "description": "Soda 190cal.",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "S",
+                "medium": "M",
+                "large": "L",
+                "extraLarge": "XL"
+            }
+        }
+    },
+    {
+        "icon": "./images/fanta_11zon.webp",
+        "productName": "Fanta Orange",
+        "description": "Soda 210cal.",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "S",
+                "medium": "M",
+                "large": "L",
+                "extraLarge": "XL"
+            }
+        }
+    },
+    {
+        "icon": "./images/limonade _11zon.webp",
+        "productName": "Lemonade",
+        "description": "Lemon Juice 120cal.",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "S",
+                "medium": "M",
+                "large": "L",
+                "extraLarge": "XL"
+            }
+        }
+    },
+    {
+        "icon": "./images/bubbleatea.webp",
+        "productName": "BubbleTea",
+        "description": "Bubble Tea 220cal.",
+        "priceS": 1.69,
+        "priceM": 1.79,
+        "priceL": 1.89,
+        "priceXL": 1.99,
+        "additionsInfo": {
+            "sizes": {
+                "small": "S",
+                "medium": "M",
+                "large": "L",
+                "extraLarge": "XL"
+            }
+        }
+    },
+    {
+        "icon": "./images/smoothie.webp",
+        "productName": "Smoothie",
+        "description": "Smoothies 220cal.",
+        "priceS": 2.69,
+        "priceM": 2.79,
+        "priceL": 2.89,
+        "priceXL": 2.99,
+        "additionsInfo": {
+            "sizes": {
+                "small": "S",
+                "medium": "M",
+                "large": "L",
+                "extraLarge": "XL"
+            }
+        }
+    },
+    {
+        "icon": "./images/watter.webp",
+        "productName": "Watter",
+        "description": "Watter 0cal.",
+        "priceS": 0.99,
+        "priceM": 1.29,
+        "priceL": 1.39,
+        "priceXL": 1.89,
+        "additionsInfo": {
+            "sizes": {
+                "small": "S",
+                "medium": "M",
+                "large": "L",
+                "extraLarge": "XL"
+            }
+        }
+    }
+]

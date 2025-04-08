@@ -1,0 +1,104 @@
+[
+    {
+        "icon": "./images/macarrons.jpg",
+        "productName": "Macaron",
+        "description": "Macaron mix flavors",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/churros.webp",
+        "productName": "Churros",
+        "description": "Churros milk cream",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/brigadeiro1.webp",
+        "productName": "Brigadeiro",
+        "description": "Chocolate milk",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/paodemel.jpg",
+        "productName": "Honey Bread",
+        "description": "Bread honey made",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/quindim.jpg",
+        "productName": "Eggs Candy",
+        "description": "Quindin Eggs Coconut",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/cajuzinho.jpg",
+        "productName": "Cajuzinho Candy",
+        "description": "Cajuzinho peanuts Candy",
+        "priceS": 1.69,
+        "priceM": 1.79,
+        "priceL": 1.89,
+        "priceXL": 1.99,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    }
+]

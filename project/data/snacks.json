@@ -1,0 +1,104 @@
+[
+    {
+        "icon": "./images/coxinha.webp",
+        "productName": "Coxinha",
+        "description": "Chicken Croquet",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/kibes.webp",
+        "productName": "Kibes",
+        "description": "Arabic Food",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/cheesestick.jpg",
+        "productName": "Breaded Mozzarela Sticks",
+        "description": "Breaded Mozzarela Sticks",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/empada.webp",
+        "productName": "Small Chicken pie",
+        "description": "Small Chicken pie",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/paoqueijo.webp",
+        "productName": "Bread Cheese",
+        "description": "Bread Cheese",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    },
+    {
+        "icon": "./images/pastel.webp",
+        "productName": "Meat snack",
+        "description": "Meat Pastel",
+        "priceS": 1.29,
+        "priceM": 1.39,
+        "priceL": 1.49,
+        "priceXL": 1.59,
+        "additionsInfo": {
+            "sizes": {
+                "small": "3PCs",
+                "medium": "5PCs",
+                "large": "8PCs",
+                "extraLarge": "12PCs"
+            }
+        }
+    }
+]
