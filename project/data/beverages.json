@@ -120,8 +120,8 @@
     },
     {
         "icon": "./images/watter.webp",
-        "productName": "Watter",
-        "description": "Watter 0cal.",
+        "productName": "Water",
+        "description": "Water 0cal.",
         "priceS": 0.99,
         "priceM": 1.29,
         "priceL": 1.39,
