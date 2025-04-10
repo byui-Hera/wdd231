@@ -879,6 +879,7 @@ span {
     transition: transform 0.2s;
 }
 
+section.product-card {}
 
 .cart-icon:hover {
     transform: scale(1.1);
@@ -1262,59 +1263,4 @@ p {
 }
 
 
-.nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 15px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: #fff;
-    border-radius: 5px;
-}
-
-
-footer {
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer .logo-area img {
-    margin-bottom: 15px;
-}
-
-footer .nav-links-footer li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-footer .social-media li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-footer p {
-    margin-top: 15px;
-    font-size: 0.9rem;
-}
-
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carrocel .hero-button {
-        text-align: center;
-    }
-
-    footer .nav-links-footer li,
-    footer .social-media li {
-        display: block;
-        margin: 5px 0;
-    }
-}
 
