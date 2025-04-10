@@ -5,11 +5,11 @@
     <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estevas Garden Snack Bar</title>
+    <title>Contact Us | Estevas Garden Snack Bar</title>
 
     <!-- Description and Author -->
     <meta name="description"
-        content="Welcome to Estevas Garden Snack Bar - Immerse yourself in a unique experience with Albanian cuisine and its flavors, as well as drinks and enjoy a welcoming and relaxing atmosphere.">
+        content="Contact Estevas Garden Snack Bar - Share your feedback, ask questions, or get in touch with us.">
     <meta name="author" content="Hera Hysi">
 
     <!-- Favicon -->
@@ -29,29 +29,12 @@
     <noscript>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </noscript>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
-
-    <!-- Meta Tags for Social Media (Open Graph) -->
-    <meta property="og:site_name" content="Estevas Garden Snack Bar">
-    <meta property="og:title" content="Estevas Garden Snack Bar - Albanian cuisine and its flavors">
-    <meta property="og:description"
-        content="Immerse yourself in the unique flavors and cozy atmosphere of Estevas Garden Snack Bar. Perfect for relaxing and enjoying!">
-    <meta property="og:url" content="https://byui-hera.github.io/wdd231/project/index.html">
-    <meta property="og:type" content="website">
-
-    <!-- Meta for Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Estevas Garden Snack Bar">
-    <meta name="twitter:description"
-        content="Immerse yourself in the unique flavors and cozy atmosphere of Estevas Garden Snack Bar. Perfect for relaxing and enjoying!">
 
     <!-- Scripts -->
     <script defer src="./scripts/hamburger.js"></script>
     <script defer src="./scripts/time.js"></script>
     <script defer src="./scripts/wayfinding.js"></script>
     <script defer src="./scripts/popup.js"></script>
-
 </head>
 
 <body class="form">
@@ -59,8 +42,6 @@
     <header>
         <!-- Navigation Menu -->
         <nav class="menu">
-
-            <!-- Logo (normal and responsive) -->
             <!-- Hamburger menu button -->
             <button class="hamburger" aria-label="Menu">
                 <span class="bar"></span>
@@ -102,64 +83,74 @@
                     <a href="mailto:geral@estevasgarden.com" aria-label="Send us an email"></a>
                 </li>
             </ul>
-
         </nav>
     </header>
-    <main>
-        <!-- Hero Area -->
 
+    <main>
         <div class="contact-container">
             <div class="contact-info">
                 <h1>Contact Us</h1>
-                <p>
-                    Your opinion is important to us. Feel free to contact us at any time via the form. It will be a
+                <p>Your opinion is important to us. Feel free to contact us at any time via the form. It will be a
                     pleasure to serve YOU.</p>
 
                 <div class="info-item">
-                    <img src="./images/logo-correio-form.png" alt="Email Icon">
+                    <img src="./images/logo-correio-form.png" alt="Email Icon" loading="lazy">
                     <span>contactus@estevasgarden.com</span>
                 </div>
 
                 <div class="info-item">
-                    <img src="./images/whats.png" alt="WhatsApp Icon">
+                    <img src="./images/whats.png" alt="WhatsApp Icon" loading="lazy">
                     <span>+355 67 400 9600</span>
                 </div>
 
                 <div class="info-item">
-                    <img src="./images/logo%20localiza.png" alt="Location Icon">
-                    <span>TEG shopping center<br>Avenida Gen. Ramalho Eanes, s/n<br>White Castle
-                        6000-379</span>
+                    <img src="./images/logo%20localiza.png" alt="Location Icon" loading="lazy">
+                    <span>TEG shopping center<br>Avenida Gen. Ramalho Eanes, s/n<br>White Castle 6000-379</span>
                 </div>
-
-
             </div>
 
             <div class="contact-form">
-                <div class="overlay" id="overlay"></div> <!-- Darkened background -->
                 <h2>Talk to Us</h2>
                 <form name="contact" class="form" id="form">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="phone" placeholder="Contact (optional)">
-                    <textarea name="message" rows="5" placeholder="Your message here " required></textarea>
+                    <!-- Name Field -->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required aria-label="Name">
+
+                    <!-- Email Field -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required
+                        aria-label="Email">
+
+                    <!-- Phone Field -->
+                    <label for="phone">Phone (optional)</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number" aria-label="Phone">
+
+                    <!-- Message Field -->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required
+                        aria-label="Message"></textarea>
+
+                    <!-- Submit Button -->
                     <input type="submit" value="Send my message">
                 </form>
+
+                <!-- Popup Confirmation -->
                 <div class="popup" id="popup">
                     <div class="leftside-popup">
-                        <img src="./images/logo-estevas-completo_11zon.webp" alt="">
+                        <img src="./images/logo-estevas-completo_11zon.webp" alt="Estevas Garden Logo" loading="lazy">
                         <h2>THANK YOU!</h2>
                     </div>
                     <div class="rigthside-popup">
                         <h2>We have received your message successfully!</h2>
                         <p>Estevas Garden Team appreciates your contact.</p>
                         <p>Your opinion is very important to us. We will respond to you as soon as possible.</p>
-                        <span class="close-btn" onclick="closePopup()">X</span>
+                        <button class="close-btn" onclick="closePopup()" aria-label="Close popup">X</button>
                     </div>
-
                 </div>
             </div>
         </div>
     </main>
+
     <footer>
         <!-- Logo Area -->
         <div class="logo-area">
@@ -168,7 +159,6 @@
 
         <!-- Icons and Links Area -->
         <div class="icons-links-area">
-
             <!-- Navigation Links -->
             <div>
                 <ul class="nav-links-footer">
@@ -182,7 +172,6 @@
             </div>
             <!-- Icon Navigation -->
             <div>
-
                 <ul class="nav-links-icones">
                     <li><a href="./index.html" class="home"><img src="./images/home40x40png.png" alt="Home"></a></li>
                     <li><a href="beverages.html" class="bubbletea"><img src="./images/bubbletea40x40png.png"
@@ -192,11 +181,8 @@
                     </li>
                     <li><a href="sweets.html" class="order"><img src="./images/order40x40png.png"
                                 alt="Order sweets"></a></li>
-
                 </ul>
             </div>
-
-
         </div>
 
         <!-- Copyright -->
@@ -216,5 +202,7 @@
             </p>
         </div>
     </footer>
+
+</body>
 
 </html>

@@ -25,7 +25,7 @@ main {
 
 }
 
-/* Menu principal */
+
 
 header {
 
@@ -49,12 +49,10 @@ header {
 
 }
 
-/*menu hanburger*/
 
 
 .hamburger {
     display: none;
-    /* Somente visível no mobile */
     flex-direction: column;
     cursor: pointer;
     background: none;
@@ -71,16 +69,14 @@ header {
     transition: 0.4s;
 }
 
-/*//////////*/
+
 
 .logo .logo-name {
     display: none;
-    /* Mostra logo padrão em modo responsivo */
 }
 
 .logo-modo-responsivo .logocomplete {
     display: block;
-    /* Padrão visível no desktop */
 }
 
 .logo-modo-responsivo .logocomplete {
@@ -98,8 +94,6 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
-
-
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -107,9 +101,7 @@ header {
     padding: 20px;
     margin: 0 auto;
     align-items: center;
-    /* Centraliza verticalmente */
     justify-content: center;
-    /* Centraliza horizontalmente */
     box-sizing: border-box;
     text-align: center;
 
@@ -133,21 +125,16 @@ header {
 
 .highlight {
     color: #fefeff;
-    /* Cor personalizada para o texto destacado */
     font-weight: bold;
-    /* Negrito */
     font-size: 1.5em;
-    /* Aumenta o tamanho da fonte */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    /* Adiciona sombra ao texto */
 }
 
 
-/* Links de navegação */
+
 
 :root {
     --background: rgba(179, 178, 178, 0.2);
-    /* Cor base applyed in the header*/
 }
 
 .nav-links li a.active {
@@ -169,8 +156,6 @@ header {
 .nav-links li,
 .nav-links-footer li {
     margin: 0 15px;
-    /* Espaço entre itens */
-
 }
 
 .nav-links a,
@@ -254,7 +239,7 @@ header {
     font-weight: 300;
 }
 
-/* Ícones de redes sociais */
+
 .social-media {
 
     display: flex;
@@ -269,13 +254,10 @@ header {
 
     margin-left: 15px;
     width: 35px;
-    /* Define a largura do ícone */
     height: 35px;
-    /* Define a altura do ícone */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    /* Centraliza a imagem de fundo */
 }
 
 .social-media a {
@@ -308,7 +290,7 @@ header {
     background-image: url('../images/email38x27png.png');
 }
 
-/* Efeito hover para alterar a imagem */
+
 .social-media .face:hover {
     background-image: url('../images/face40x40hover.png');
 }
@@ -329,14 +311,7 @@ header {
     background-image: url('../images/email38x28e32png.png');
 }
 
-/*images background*/
 
-
-
-/*//////////////////////*/
-/*footer styles*/
-
-/* Estilos de base */
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -361,7 +336,6 @@ footer {
     gap: 20px;
 }
 
-/* Estilos para os Ícones e Links */
 .nav-links-icones,
 .social-media,
 .nav-links {
@@ -379,7 +353,7 @@ footer {
 }
 
 
-/* Ajuste dos Ícones Sociais */
+
 .social-media li a {
     display: block;
     width: 40px;
@@ -387,7 +361,7 @@ footer {
     background-size: cover;
 }
 
-/* Direitos Autorais */
+
 .author-rights p {
     margin-top: 20px;
     display: flex;
@@ -407,7 +381,7 @@ footer {
 }
 
 
-/*///slides cars/////*/
+
 .carrocel {
 
     width: 100vw;
@@ -415,8 +389,6 @@ footer {
     position: relative;
     overflow: hidden;
     background-color: var(--background);
-    /* Usa a variável CSS */
-
 }
 
 
@@ -427,26 +399,20 @@ footer {
     opacity: 0;
     display: none;
     transition: opacity 0.8s ease-in-out;
-
-
 }
 
 
 .slide.active {
-
     opacity: 1;
     display: block;
 }
 
 .slide>img {
-
     display: block;
     width: 100%;
     height: 100vh;
     object-fit: contain;
     object-position: center;
-
-
 }
 
 #bkg2 {
@@ -474,9 +440,6 @@ footer {
     margin: 0 auto;
     object-fit: contain;
     margin-top: -5%;
-
-
-
 }
 
 #soft-drinks {
@@ -489,7 +452,6 @@ footer {
     align-items: center;
     object-fit: contain;
     margin-top: 5%;
-
 }
 
 
@@ -532,26 +494,19 @@ footer {
 }
 
 
-/*////////PAGE FORM*/
-/*formulario//////////////////////////////////////////*/
+
 body.form {
-
     background: linear-gradient(#ff2d02, #ffb100);
-    /* Degradê do fundo */
-
-
 }
 
 body.success {
     background: linear-gradient(#ff2d02, #ffb100);
-
 }
 
-/*pop up thanks form style*/
+
 #popup,
 #overlay {
     display: none;
-    /* Oculta inicialmente */
 }
 
 .overlay {
@@ -583,57 +538,45 @@ body.success {
 }
 
 .leftside-popup {
-
     background-color: #ff2d02;
     border-radius: 20px;
-
 }
 
 .leftside-popup img {
-
     max-width: 100%;
     width: 300px;
     height: auto;
     padding: 20px;
-
-
 }
 
 .popup .leftside-popup h2 {
-
     font-size: 3rem;
     padding: 10px;
-
 }
 
 
 .rigthside-popup {
-
     background-color: white;
     border-radius: 20px;
     padding: 20px;
 }
 
 .rigthside-popup {
-
     color: #000000;
     background-color: white;
     border-radius: 20px;
 }
 
 .popup .rigthside-popup h2 {
-
     color: #000000;
     font-size: 2rem;
     font-weight: bold;
-
 }
 
 .popup .rigthside-popup p {
     color: #000000;
     font-size: 1rem;
     font-weight: bold;
-
 }
 
 
@@ -646,11 +589,6 @@ body.success {
     color: white;
 }
 
-/* Estilos para o pop-up */
-
-
-/*///////*/
-
 .contact-info {
     flex: 1;
     padding: 30px;
@@ -661,7 +599,6 @@ body.success {
     font-size: 24px;
     color: white;
     margin-top: 1px;
-    /* Adiciona margem superior */
 }
 
 .contact-info p {
@@ -682,7 +619,6 @@ body.success {
     align-items: center;
     gap: 5px;
     padding: 10px;
-
 }
 
 .contact-form {
@@ -693,7 +629,6 @@ body.success {
 
 .contact-form input,
 .contact-form textarea {
-
     outline: none;
 }
 
@@ -735,75 +670,54 @@ span {
     text-align: center;
 }
 
-/*////////////////////////////////////////////////////*/
-/*thanks page*/
 
 .thanks-container {
-
     /*border-radius: 10px;*/
     display: flex;
     gap: 10px;
-
     max-width: 600px;
     width: 100%;
     overflow: hidden;
     padding: 20px;
-    /* Adiciona espaçamento interno */
     z-index: 3;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 70vh;
-
 }
 
-/*beverages pages styles*/
 
-/*styles test*/
 .beverages-title {
-
     font-size: 3rem;
     padding: 20px;
     color: white;
-
 }
 
-/* Container dos cartões */
-/* Container dos cartões */
+
 #cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 16px;
-    /* Espaçamento entre os cartões */
     padding: 20px;
-    /* Adiciona um espaçamento interno ao container */
     max-width: 1200px;
     overflow-x: hidden;
-
 }
 
-/* Estilos dos cartões individuais */
 .card {
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-    /* Sombra para o cartão */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    /* Espaçamento interno do cartão */
     box-sizing: border-box;
-    /* Inclui padding e border nas dimensões do cartão */
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
-
-/* Imagem dentro do cartão */
 .card img {
     max-width: 100%;
     width: 80%;
@@ -812,7 +726,7 @@ span {
     margin-bottom: 8px;
 }
 
-/* Título do produto */
+
 .card h2 {
     font-size: 1.3rem;
     color: #333;
@@ -820,7 +734,7 @@ span {
     text-align: center;
 }
 
-/* Texto de descrição e preço */
+
 .card p {
     color: #000;
     font-size: 1rem;
@@ -828,7 +742,6 @@ span {
     text-align: center;
 }
 
-/* Botões de tamanho */
 .size-buttons {
     display: flex;
     gap: 8px;
@@ -840,25 +753,21 @@ span {
 .size-button {
     background-color: #ff2d02;
     padding: 5px 12px;
-    /* Ajusta o padding para se adaptar melhor ao conteúdo */
     color: white;
     border: none;
     border-radius: 12px;
-    /* Arredondamento maior para efeito de pílula */
     cursor: pointer;
     transition: background-color 0.3s;
     text-align: center;
     font-size: 0.8rem;
     min-width: 36px;
-    /* Define uma largura mínima para garantir uma boa aparência */
     min-height: 36px;
-    /* Define uma altura mínima */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Efeito de hover */
+
 .size-button:hover {
     background-color: #000000;
 }
@@ -872,38 +781,28 @@ span {
 
 .product-card .cart-icon {
     width: 35px;
-    /* Ajuste o tamanho do ícone */
     height: 30px;
     cursor: pointer;
     margin-top: 10px;
     transition: transform 0.2s;
 }
 
-section.product-card {}
 
 .cart-icon:hover {
     transform: scale(1.1);
-    /* Efeito de aumento ao passar o mouse */
 }
 
 .cart-message {
     font-size: 0.9rem;
-    /* Tamanho da fonte */
     color: #000702;
-    /* Cor verde para indicar sucesso */
     margin-top: 8px;
-    /* Espaçamento acima da mensagem */
     display: none;
-    /* Esconde a mensagem inicialmente */
 }
 
-/* Exibe a mensagem quando o carrinho for clicado */
 .cart-message.show {
     display: block;
-    /* Exibe a mensagem */
 }
 
-/*snacks page styles*/
 
 .snacks-title {
 
@@ -913,10 +812,6 @@ section.product-card {}
 
 }
 
-/*////consuming api weather/////////**/
-
-
-/* Weather widget */
 
 .weather-info {
 
@@ -936,9 +831,6 @@ p {
 }
 
 
-
-/*/////////////*/
-/* Responsividade */
 @media (max-width: 768px) {
     .weather-info {
 
@@ -959,7 +851,6 @@ p {
 
     .nav-links {
         display: none;
-        /* Esconde os links de navegação no modo responsivo */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -971,32 +862,26 @@ p {
 
     .logo .logo-name {
         display: block;
-        /* Mostra logo padrão em modo responsivo */
         width: 250px;
         height: auto;
     }
 
-    /* Logo padrão e responsivo */
+
     .logo-modo-responsivo .logocomplete {
         display: none;
-        /* Oculto no modo responsivo */
     }
 
     footer .social-media {
-
         display: flex;
     }
 
     .social-media {
-
         display: none;
     }
 
-    /*menu hanburger*/
 
     .nav-links {
         display: none;
-        /* Esconde o menu no mobile */
         flex-direction: column;
         position: absolute;
         gap: 10px;
@@ -1004,28 +889,24 @@ p {
         left: 0;
         width: 100%;
         background: linear-gradient(#ff2d02, #f51d00);
-        /* Degradê do fundo */
         padding: 20px;
         z-index: 50;
     }
 
     .nav-links a,
     .nav-links-footer a {
-
         font-size: 0.9rem;
-
     }
 
     .nav-links.active {
         display: flex;
-        /* Exibe o menu quando ativo */
     }
 
     .hamburger {
         display: flex;
     }
 
-    /* Transforma o hambúrguer em "X" */
+
     .hamburger.open .bar:nth-child(1) {
         transform: rotate(45deg) translate(10px, 10px);
     }
@@ -1038,10 +919,9 @@ p {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
-    /*/////////////*/
+
 
     #welcome-title {
-
         color: white;
         font-size: 2rem;
         z-index: 9999;
@@ -1053,7 +933,7 @@ p {
         z-index: 999;
     }
 
-    /*footer responsivo*/
+
     footer {
         display: grid;
         grid-template-columns: 1fr;
@@ -1074,9 +954,8 @@ p {
         justify-content: center;
     }
 
-    /**/
-    #bkg2 {
 
+    #bkg2 {
         display: block;
         width: 500px;
         height: 100vh;
@@ -1087,11 +966,9 @@ p {
         left: 50%;
         /*transform: translate(-50%, -50%);*/
         object-fit: cover;
-
     }
 
     #soft-drinks {
-
         display: block;
         width: 500px;
         height: 70vh;
@@ -1099,40 +976,25 @@ p {
         align-items: center;
         object-fit: contain;
         margin-top: 10%;
-
     }
 
 
-
-    /*////*/
-
-    /*slider styles responsivo*/
     .carrocel img {
-
         margin-top: 0;
     }
 
     .carrocel-button {
-
         padding: 0 2rem;
-
     }
 
     .highlight {
-
-
         font-size: 2rem;
-        /* Aumenta o tamanho da fonte */
-
     }
 
-    /*/////////*/
 
-    /*//form styles//*/
     .contact-container {
         display: flex;
         flex-direction: column;
-
     }
 
     .contact-container {
@@ -1144,17 +1006,13 @@ p {
         width: 100%;
         overflow: hidden;
         padding: 20px;
-        /* Adiciona espaçamento interno */
         z-index: 3;
         height: auto;
-
-
     }
 
     .contact-info h1 {
         text-align: center;
         font-size: 20px;
-
     }
 
     .contact-info p {
@@ -1164,13 +1022,11 @@ p {
 
     .contact-info .info-item {
         display: flex;
-        /* Esconde as info-items */
         align-items: center;
     }
 
     .contact-info .info-item img {
         display: inline-block;
-        /* Esconde as imagens dos info-items */
     }
 
     .contact-form {
@@ -1179,53 +1035,34 @@ p {
 
     .contact-form h2 {
         display: flex;
-        /* Esconde o título do formulário */
         justify-content: center;
     }
 
     section.product-card {
-
         border: 1px solid rgba(184, 184, 184, 0.4);
         border-radius: 12px;
-
     }
 
     span {
         display: flex;
-        /* Esconde o span */
     }
-
-    /*////////*/
-
-
-
-    /*cards style responsive*/
 
     #cards {
         display: grid;
         grid-template-columns: 1fr;
         gap: 16px;
-        /* Espaçamento entre os cartões */
         padding: 20px;
-        /* Adiciona um espaçamento interno ao container */
         max-width: 1200px;
         overflow-x: hidden;
-
     }
 
     .card {
-
         border-radius: 0;
     }
-
-
-
-
 }
 
 
 @media (max-width: 480px) {
-    /* Para dispositivos ainda menores */
 
     .manual-navigation {
         margin-top: 50px;
@@ -1254,7 +1091,6 @@ p {
         margin: 0;
     }
 
-    /*//form styles//*/
     .contact-container {
         display: flex;
         flex-direction: column;
