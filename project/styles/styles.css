@@ -1099,5 +1099,6 @@ p {
     }
 }
 
-
-
+label {
+    color: white;
+}
