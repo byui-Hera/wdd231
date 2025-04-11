@@ -1117,17 +1117,32 @@ label {
 
 /* Fix for .nav-links a */
 .nav-links a {
-    color: #f0f0f0;
-    /* Light gray for better contrast */
+    color: #ffffff;
+    /* Changed to white for better contrast */
+    font-weight: 500;
+    /* Slightly bold for improved readability */
+    text-decoration: none;
+    /* Ensures clean appearance */
 }
 
 .nav-links a:hover {
     color: #ffd700;
-    /* Gold for hover state */
+    /* Gold for hover state to maintain visual appeal */
+    text-decoration: underline;
+    /* Adds underline for hover state */
 }
 
 /* Fix for #current-temp */
 #current-temp {
     color: #ffcc00;
     /* Bright yellow for better contrast */
+    font-weight: bold;
+    /* Makes the text more readable */
+    padding: 4px 6px;
+    /* Adds spacing for better visibility */
+    border-radius: 6px;
+    /* Adds rounded corners for aesthetics */
+    display: inline-block;
+    /* Ensures proper spacing and alignment */
 }
+
