@@ -1118,13 +1118,6 @@ label {
     /* Adds underline for hover state */
 }
 
-/* Fix for .carrocel-button.prev */
-.carrocel-button.prev {
-    padding: 10px;
-    /* Added padding for better click area */
-    border-radius: 8px;
-    /* Rounded corners for aesthetics */
-}
 
 .carrocel-button.prev:hover,
 .carrocel-button.prev:focus {
