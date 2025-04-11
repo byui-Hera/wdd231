@@ -1,11 +1,6 @@
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-
-
-
-
-
 const footerCurrentTemp = document.querySelector('#footer-current-temp');
 const footerWeatherIcon = document.querySelector('#footer-weather-icon');
 const footerHumidity = document.querySelector('#footer-humidity');
