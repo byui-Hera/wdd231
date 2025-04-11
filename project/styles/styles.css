@@ -1103,22 +1103,8 @@ label {
     color: white;
 }
 
-/* Fix for .carrocel-button.prev */
-.carrocel-button.prev {
-    color: rgba(255, 255, 255, 0.8);
-    /* Increased opacity for better contrast */
-}
-
-.carrocel-button.prev:hover,
-.carrocel-button.prev:focus {
-    color: #ffffff;
-    /* Full white for hover/focus */
-}
-
 /* Fix for .nav-links a */
 .nav-links a {
-    color: #ffffff;
-    /* Changed to white for better contrast */
     font-weight: 500;
     /* Slightly bold for improved readability */
     text-decoration: none;
@@ -1132,10 +1118,26 @@ label {
     /* Adds underline for hover state */
 }
 
+/* Fix for .carrocel-button.prev */
+.carrocel-button.prev {
+    color: #ffffff;
+    /* Changed to full white for better contrast */
+    padding: 10px;
+    /* Added padding for better click area */
+    border-radius: 8px;
+    /* Rounded corners for aesthetics */
+}
+
+.carrocel-button.prev:hover,
+.carrocel-button.prev:focus {
+    color: #ffd700;
+    /* Gold for hover/focus state */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker background for hover/focus */
+}
+
 /* Fix for #current-temp */
 #current-temp {
-    color: #ffcc00;
-    /* Bright yellow for better contrast */
     font-weight: bold;
     /* Makes the text more readable */
     padding: 4px 6px;
