@@ -1126,3 +1126,8 @@ label {
     /* Gold for hover state */
 }
 
+/* Fix for #current-temp */
+#current-temp {
+    color: #ffcc00;
+    /* Bright yellow for better contrast */
+}
